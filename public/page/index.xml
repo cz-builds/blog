@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on CZ Builds</title>
+        <link>https://xcz1404-glitch.github.io/blog/page/</link>
+        <description>Recent content in Pages on CZ Builds</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language><atom:link href="https://xcz1404-glitch.github.io/blog/page/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>About</title>
+            <link>https://xcz1404-glitch.github.io/blog/page/about/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            <guid>https://xcz1404-glitch.github.io/blog/page/about/</guid>
+            <description>&lt;p&gt;Hi, I&amp;rsquo;m CZ. I&amp;rsquo;m an IC (Integrated Circuit) student working with FPGA and embedded systems.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m interested in the intersection of &lt;strong&gt;AI and hardware&lt;/strong&gt; — how to make neural networks run on resource-constrained chips, and what that means for the future of computing.&lt;/p&gt;&#xA;&lt;p&gt;This blog is where I document what I learn, build, and think about. Topics include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;AI inference on FPGA (Zynq-7020)&lt;/li&gt;&#xA;&lt;li&gt;Hardware architecture for neural networks&lt;/li&gt;&#xA;&lt;li&gt;The AI industry from a hardware perspective&lt;/li&gt;&#xA;&lt;li&gt;Lessons from building software projects&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I build in public. Follow along on &lt;a class=&#34;link&#34; href=&#34;https://github.com/xcz1404-glitch&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;GitHub&lt;/a&gt; and &lt;a class=&#34;link&#34; href=&#34;https://twitter.com/cz_build&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;Twitter/X&lt;/a&gt;.&lt;/p&gt;&#xA;</description>
+        </item><item>
+            <title>Archives</title>
+            <link>https://xcz1404-glitch.github.io/blog/page/archives/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            <guid>https://xcz1404-glitch.github.io/blog/page/archives/</guid>
+            <description></description>
+        </item></channel>
+</rss>
