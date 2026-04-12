@@ -1,4 +1,4 @@
-baseURL: https://xcz1404-glitch.github.io/blog/
+baseURL: https://cz-builds.github.io/blog/
 languageCode: en
 title: "CZ Builds"
 theme: stack
@@ -12,7 +12,7 @@ params:
   sidebar:
     emoji: ""
     subtitle: "IC student exploring AI + Hardware. Building in public."
-    avatar: https://github.com/xcz1404-glitch.png
+    avatar: https://github.com/cz-builds.png
 
   article:
     toc: true
@@ -50,7 +50,7 @@ menu:
   social:
     - identifier: github
       name: GitHub
-      url: https://github.com/xcz1404-glitch
+      url: https://github.com/cz-builds
       params:
         icon: brand-github
     - identifier: twitter

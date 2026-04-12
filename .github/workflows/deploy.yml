@@ -34,7 +34,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify --baseURL "https://xcz1404-glitch.github.io/blog/"
+        run: hugo --minify --baseURL "https://cz-builds.github.io/blog/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

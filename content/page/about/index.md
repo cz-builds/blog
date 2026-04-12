@@ -19,4 +19,4 @@ This blog is where I document what I learn, build, and think about. Topics inclu
 - The AI industry from a hardware perspective
 - Lessons from building software projects
 
-I build in public. Follow along on [GitHub](https://github.com/xcz1404-glitch) and [Twitter/X](https://twitter.com/cz_build).
+I build in public. Follow along on [GitHub](https://github.com/cz-builds) and [Twitter/X](https://twitter.com/cz_build).
