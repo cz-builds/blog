@@ -1,9 +1,8 @@
 ---
-title: "AI 时代的高带宽学习法：从第一性原理到每日实操"
-description: "知识获取的带宽已经逼近无限，真正的瓶颈变成了人脑本身。这是一套基于学习科学与 2024–2026 年 AI 教育实验证据的完整学习方法论。"
+title: "The High-Bandwidth Learning Method for the AI Era"
+description: "Access to knowledge is now close to unlimited, so the bottleneck has moved into the human brain itself. A complete learning method built on learning science and 2024–2026 AI tutoring trials, covering everything from first principles to daily practice."
 date: 2026-10-20
-draft: true
-isCJKLanguage: true
+draft: false
 categories:
   - Learning
 tags:
@@ -12,743 +11,755 @@ tags:
   - methodology
 ---
 
-> **写在前面**：这是一份调研加推演的笔记。目标是给"小白如何在短期内快速掌握一个领域"一套从哲学到操作的完整方案。文中的结论按证据强度标注：
-> **【强】** 多项研究反复验证；**【中】** 有可靠研究支持，但有边界条件；**【推演】** 我基于证据的推理，尚未被直接检验。
+> 🌐 **中文版**：[AI 时代的高带宽学习法：从第一性原理到每日实操](../ai-era-learning-zh/)
+
+> **A note before we start:** These are research notes plus my own reasoning. I wanted a complete answer, from philosophy down to daily routine, to one question: how can a complete beginner get good at a new field in a short time? Each claim is tagged by strength of evidence:
+> **[Strong]** replicated across many studies; **[Moderate]** supported by solid research, with boundary conditions; **[Inference]** my own reasoning from the evidence, not yet directly tested.
 
 ---
 
-## 0. 一页纸版本
+## 0. The one-page version
 
-**核心判断**
+**Core claims**
 
-1. **输入带宽已经不是瓶颈。** 人类行为层面的信息吞吐量大约只有 10 bit/s，而感官输入约为 10⁹ bit/s（Zheng & Meister, 2025）。工作记忆一次只能操作约 4 个组块（Cowan, 2001）。AI 让"找到合适的信息"这件事几乎不花钱了，瓶颈于是完全落在了人脑的**写入端**。
-2. **"拉满带宽"不是喂更多信息**，而是做好四件事：
-   - **提高压缩率**：建立图式和组块，让同样的 10 bit 装下更多含义；
-   - **提高写入频率**：把时间从"读、听、看"挪到"提取、生成、解释、预测"上；
-   - **降低噪声**：和学习目标无关的认知负荷交给 AI，压到接近零；
-   - **顺应生理节律**：靠间隔复习、睡眠和运动，让巩固在后台自动进行。
-3. **AI 是放大器，往哪个方向放大取决于怎么用。** 同样基于 GPT-4，能"直接给答案"的版本让高中生的考试成绩比对照组低了 17%，"只给提示"的版本则基本挡住了这种损害（Bastani et al., 2025）。哈佛把 AI 导师设计成"一次只给一步"，学生用更少时间学到了比主动学习课堂更多的东西（Kestin et al., 2025）。
-4. **一条总原则**：**AI 负责消除一切"非学习性摩擦"，你保留所有"学习性摩擦"。**
-5. **一个核心循环**：每个概念走一遍 **猜 → 学 → 合 → 讲 → 练 → 记**，外面套一个项目级流程 **定靶 → 测绘 → 骨架 → 循环 → 实战 → 校准**。
+1. **Input bandwidth is no longer the bottleneck.** Human behavior runs at roughly 10 bits/s of information throughput, while our senses take in about 10⁹ bits/s (Zheng & Meister, 2025). Working memory holds only about 4 chunks at a time (Cowan, 2001). AI has made finding the right information nearly free, so the bottleneck now sits entirely at the brain's **write port**.
+2. **Maxing out your bandwidth does not mean feeding in more information.** It means four things:
+   - **Raise the compression ratio**: build schemas and chunks, so the same 10 bits carry more meaning.
+   - **Raise the write frequency**: move time away from reading, listening and watching, toward retrieving, generating, explaining and predicting.
+   - **Cut the noise**: hand all cognitive load that is unrelated to the learning goal to AI, until it is close to zero.
+   - **Work with your biology**: spacing, sleep and exercise let consolidation run in the background.
+3. **AI is an amplifier, and the way you use it decides what it amplifies.** Two versions of the same GPT-4 setup gave opposite results. The one that handed out answers left high-school students scoring 17% below the control group on the exam. The one that gave only hints largely prevented that harm (Bastani et al., 2025). Harvard built an AI tutor that gives one step at a time, and its students learned more, in less time, than students in an active-learning classroom (Kestin et al., 2025).
+4. **One governing principle**: **let AI remove all *non-learning friction*, and keep all *learning friction* for yourself.**
+5. **One core loop**: run every concept through **Predict → Study → Recall → Explain → Practice → Capture**, wrapped inside a project-level flow of **Target → Map → Skeleton → Loop → Build → Calibrate**.
 
 ---
 
-## 1. 重新定义问题：学习带宽的瓶颈在哪里
+## 1. Reframing the problem: where is the learning bottleneck?
 
-### 1.1 一条信息要过几道关才能变成能力
+### 1.1 How many gates does information pass before it becomes ability?
 
 ```
-外部信息（几乎无限）
+External information (practically unlimited)
   │
-  │ ① 检索与筛选   ← AI 之前最贵的环节：找资料、找老师、找"刚好适合我"的解释
+  │ ① Search & filter      ← the expensive step before AI: finding material,
+  │                           finding a teacher, finding an explanation that fits you
   ▼
-注意力（一次只能处理一件事）
+Attention (one thing at a time)
   │
-  │ ② 工作记忆加工 ← 约 4 个组块，约 10 bit/s 的意识吞吐
+  │ ② Working-memory work  ← ~4 chunks, ~10 bits/s of conscious throughput
   ▼
-长期记忆编码
+Long-term memory encoding
   │
-  │ ③ 巩固         ← 需要时间、间隔和睡眠
+  │ ③ Consolidation        ← takes time, spacing and sleep
   ▼
-提取与迁移
+Retrieval & transfer
   │
-  │ ④ 反馈与纠错   ← AI 之前同样昂贵：没人及时告诉你错在哪
+  │ ④ Feedback & correction ← also expensive before AI: nobody told you
+  │                            quickly where you went wrong
   ▼
-能力（不看资料也能做出来）
+Ability (you can do it without looking anything up)
 ```
 
-AI 出现之前，①和④最贵：好老师、好教材、及时的反馈都是稀缺资源。现在①和④几乎免费，**②和③成了唯一的约束**。AI 不能直接给②③扩容，它能做的只有两件：帮你把②③用得更好，或者（用错的话）让你整个绕开它们。
+Before AI, ① and ④ were the expensive gates: good teachers, good textbooks and fast feedback were all scarce. Now ① and ④ are nearly free, and **② and ③ are the only constraints left**. AI cannot directly widen ② or ③. It can do one of two things: help you use them better, or, used badly, let you skip them entirely.
 
-Herbert Simon 在 1971 年就说过：**"信息的丰富导致注意力的贫乏。"** 这句话在今天成了字面意义上的事实。
+Herbert Simon put it this way in 1971: **"A wealth of information creates a poverty of attention."** Today that sentence is literally true.
 
-### 1.2 带宽的真正含义：压缩率比吞吐量重要
+### 1.2 What bandwidth really means: compression matters more than throughput
 
-Chase 和 Simon（1973）的经典实验里，国际象棋大师只看一眼真实棋局就能复现大部分棋子的位置，新手只能记住几个。但棋子被随机摆放时，大师的优势几乎消失。大师的工作记忆并没有更大，他们看到的是**组块**（"王翼易位后的典型结构"），新手看到的是一个个零散的棋子。
+In Chase and Simon's classic 1973 study, chess masters glanced at a real game position for five seconds and could rebuild most of it; novices remembered only a few pieces. When the pieces were placed at random, the masters' advantage nearly vanished. Masters do not have bigger working memories. They see **chunks** ("the typical structure after kingside castling"), while novices see individual pieces.
 
-所以：
+So:
 
-- **专家和新手的工作记忆都是 4 个槽，区别在于每个槽里装的东西有多大。**
-- 学习的本质，可以理解为**训练自己大脑里的"压缩编解码器"**。图式越好，同样的意识带宽能处理的信息就越多。
-- 推论【推演】：学习初期最有价值的投资是**核心图式（骨架）**，因为它会提高之后所有学习的压缩率。这也解释了为什么 AI 给新手的长篇讲解常常"左耳进右耳出"：新手没有可以挂这些信息的钩子。
+- **Experts and novices both have about four slots. What differs is how much each slot holds.**
+- One way to think about learning: **you are training your brain's compression codec.** The better your schemas, the more information the same conscious bandwidth can carry.
+- [Inference] Early on, the most valuable investment is the **core schema (the skeleton)**, because it raises the compression ratio of everything you learn afterward. It also explains why a long AI explanation often goes in one ear and out the other for a beginner: there are no hooks to hang it on.
 
-### 1.3 写入只发生在"加工"的时候
+### 1.3 Writing to memory only happens during processing
 
-认知科学家 Daniel Willingham 的一句话：**"记忆是思考的残留物。"** 你会记住你认真想过的东西，而不是你看过的东西。
+Cognitive scientist Daniel Willingham: **"Memory is the residue of thought."** You remember what you thought hard about, not what you looked at.
 
-- Dunlosky 等人（2013）系统评估了 10 种常见学习方法：**练习测试**和**分散练习**被评为"高效用"，**重读、划线、做总结**被评为"低效用"。【强】
-- Roediger 和 Karpicke（2006）：一周后的测验中，反复自测组记住约 61%，反复阅读组约 40%。可学生自己的预测正好相反。【强】
+- Dunlosky et al. (2013) rated 10 common study techniques. **Practice testing** and **distributed practice** were rated "high utility". **Rereading, highlighting and summarizing** were rated "low utility". [Strong]
+- Roediger and Karpicke (2006): on a test one week later, students who had repeatedly tested themselves recalled about 61%, versus about 40% for students who had repeatedly reread the text. The students themselves predicted the opposite. [Strong]
 
-**被动地看 AI 讲解，本质上是一种新形式的"重读"**：感觉很顺，写入很弱。
+**Passively reading AI explanations is basically a new form of rereading.** It feels smooth, and very little gets written.
 
-由此可以给出一个启发式定义【推演】：
+That suggests a working definition [Inference]:
 
-> **有效学习带宽 ≈ 单位时间内「高质量写入事件」的次数 × 难度匹配度 × 保持率**
+> **Effective learning bandwidth ≈ high-quality write events per unit of time × difficulty match × retention**
 >
-> 一次"写入事件"指的是：你**从自己脑子里**产出一些东西（一个答案、一段解释、一个预测、一份解法），然后得到**反馈**。
+> A *write event* is when you produce something **from your own head** (an answer, an explanation, a prediction, a solution) and then get **feedback** on it.
 
-整套方法论要做的就是：**最大化每小时的写入事件数，让难度始终在能力边缘，再用间隔和睡眠把保持率拉高。**
+The whole method is built to maximize write events per hour, keep the difficulty at the edge of your ability, and use spacing and sleep to push retention up.
 
 ---
 
-## 2. 哲学：在 AI 时代，"学会"意味着什么
+## 2. Philosophy: what does "learning something" mean in the AI era?
 
-### 2.1 苏格拉底的预言，2400 年后重演
+### 2.1 Socrates' warning, 2,400 years later
 
-柏拉图《斐德若篇》里，埃及国王塔姆斯这样评价文字的发明（大意）：
+In Plato's *Phaedrus*, King Thamus of Egypt judges the invention of writing (Jowett's translation):
 
-> "你的这个发明会让学会它的人在灵魂中滋生遗忘，因为他们不再使用自己的记忆，而是依赖外在的符号……你给学生的不是真理，只是真理的表象。他们会**听闻许多事物，却什么也没学到**；他们会**显得无所不知，实际上通常一无所知**；他们会成为令人厌烦的伙伴，拥有智慧的外表，却没有智慧的实质。"
+> "This discovery of yours will create forgetfulness in the learners' souls, because they will not use their memories; they will trust to the external written characters and not remember of themselves… you give your disciples not truth, but only the semblance of truth; **they will be hearers of many things and will have learned nothing; they will appear to be omniscient and will generally know nothing**; they will be tiresome company, having the show of wisdom without the reality."
 
-后来的事实是：文字确实终结了靠口耳背诵史诗的传统，但也让知识可以积累，让科学成为可能。塔姆斯说对了一半：**工具改变的是什么东西需要放在脑子里，而不是要不要学习。**
+What actually happened: writing did end the tradition of memorizing epics by heart, but it also let knowledge accumulate and made science possible. Thamus was half right. **A tool changes what needs to live in your head. It does not change whether you need to learn.**
 
-但"显得无所不知，实际上一无所知"这句话，几乎就是 AI 辅助学习最大风险的精确描述：**有 AI 时的表现 ≠ 你的能力。** 第 3 节的实验数据会反复印证这一点。
+Still, "they will appear to be omniscient and will generally know nothing" is close to an exact description of the biggest risk in AI-assisted learning: **how you perform with AI is not the same as what you can do.** The experiments in Section 3 confirm this again and again.
 
-### 2.2 什么必须长在脑子里
+### 2.2 What has to live in your head
 
-| 放在外部（AI 和文档，随用随取） | 必须长在脑子里 |
+| Keep it outside (AI and docs, look it up when needed) | It has to live in your head |
 |---|---|
-| 具体数值、API 细节、长推导的每一步 | 核心概念以及它们之间的关系（图式） |
-| 只需要查一次的事实 | 关键直觉、典型问题的解法模式 |
-| 能低成本验证的东西 | 判断标准：什么是对的、什么是好的、哪里可疑 |
-| 长尾知识 | 提问的能力：知道自己不知道什么 |
+| Specific numbers, API details, every step of a long derivation | Core concepts and how they relate (schemas) |
+| Facts you only need to look up once | Key intuitions; solution patterns for typical problems |
+| Things that are cheap to verify | Judgment: what is correct, what is good, what looks suspicious |
+| The long tail | The ability to ask questions: knowing what you don't know |
 
-为什么右边这一列无法外包？三个理由：
+Three reasons the right-hand column cannot be outsourced:
 
-1. **思考只能在工作记忆里进行，而工作记忆只能调用长期记忆里的东西。** 你没法用"存在 ChatGPT 里的知识"来思考：调用外部知识得先知道该调什么，而且每次调用都要占用宝贵的工作记忆。
-2. **验证悖论：你只能验证你懂的东西。** Microsoft 和 CMU 对 319 名知识工作者的调查发现，对 AI 越信任的人批判性思考越少，对自己越有信心的人批判性思考越多（Lee et al., 2025）。没有内部知识，你就只能选择"相信"AI。
-3. **好问题是知识的产物。** 新手问不出好问题，是因为他们看不清自己的知识缺口长什么样。
+1. **Thinking happens in working memory, and working memory can only draw on long-term memory.** You cannot think *with* knowledge that lives in ChatGPT. To pull in outside knowledge you first have to know what to pull, and every lookup takes up scarce working memory.
+2. **The verification paradox: you can only check what you understand.** A Microsoft/CMU survey of 319 knowledge workers found that the more people trusted AI, the less critical thinking they did; the more they trusted themselves, the more they did (Lee et al., 2025). Without knowledge of your own, all you can do is *believe* the AI.
+3. **Good questions come from knowledge.** Beginners can't ask good questions because they can't yet see the shape of their own gaps.
 
-一个有用的比喻【推演】：**你的大脑应该存"索引 + 核心"**，长尾内容可以外包，但索引必须足够细，细到你知道该问什么、能察觉哪里不对。
+A useful metaphor [Inference]: **your head should hold the index plus the core.** The long tail can live outside, but the index has to be detailed enough that you know what to ask and can notice when something is off.
 
-### 2.3 流畅不等于理解
+### 2.3 Fluency is not understanding
 
-AI 的讲解量身定制、流畅、永远耐心，所以"我懂了"的感觉来得比以往任何时候都快、都强烈。但**流畅感是学习效果很差的预测指标**：
+AI explanations are tailored, fluent and endlessly patient, so the feeling of "I get it" arrives faster and stronger than ever. But **that feeling is a poor predictor of learning**:
 
-- Kornell 和 Bjork（2008）的实验中，大多数人认为集中学习比交错学习效果好，实际结果正相反。【强】
-- **认出来 ≠ 想起来 ≠ 用出来。** 看懂 AI 的解答属于第一层，考试和工作要求的是第三层。
+- In Kornell and Bjork (2008), most people believed blocked study worked better than interleaved study. The results showed the opposite. [Strong]
+- **Recognizing ≠ recalling ≠ using.** Following an AI's solution is the first level. Exams and real work demand the third.
 
-由此得出一条硬规则：**只相信"拔掉 AI 之后"的表现。**
+That gives a hard rule: **only trust how you perform with the AI unplugged.**
 
-### 2.4 叉车与私教
+### 2.4 Forklift or personal trainer
 
-如果你的目标是把杠铃从 A 处挪到 B 处，用叉车最好；如果你的目标是变强，叉车毫无用处，甚至有害。
+If your goal is to move a barbell from A to B, use a forklift. If your goal is to get stronger, the forklift is useless, or worse.
 
-AI 对"**结果任务**"来说是叉车；对"**成长任务**"来说，它应该是私教。私教不替你举，他告诉你姿势哪里不对、下一组该加多少。
+For a **result task**, AI is a forklift. For a **growth task**, it should be a personal trainer: someone who never lifts for you, but tells you what is wrong with your form and how much to add next set.
 
-Anthropic 2026 年的一项随机对照实验（Shen & Tamkin）很好地展示了这一点：52 名开发者学习一个陌生的 Python 异步库，用 AI 的组测验平均分 50%，手写组 67%，速度却没有显著提升。更关键的是组内差异：
+A 2026 Anthropic randomized trial (Shen & Tamkin) shows this neatly. Fifty-two developers learned an unfamiliar async Python library. The AI group averaged 50% on the follow-up quiz, versus 67% for the group that coded by hand, and the AI group was not significantly faster. The bigger story is the spread within the AI group:
 
-| 交互模式 | 测验得分 |
+| Interaction pattern | Quiz score |
 |---|---|
-| 完全委托 AI 写代码 | < 40% |
-| 先问几句，然后逐渐全交给 AI | < 40% |
-| 用 AI 调试和验证，但只为了解决问题 | < 40% |
-| 让 AI 生成代码后追问"为什么" | ≥ 65% |
-| 同时要代码和解释 | ≥ 65% |
-| **只问概念性问题，错误自己解决** | **≥ 65%**（而且速度第二快） |
+| Delegated all the code to AI | < 40% |
+| Asked a few questions, then gradually handed everything to AI | < 40% |
+| Used AI to debug and verify, only to get things working | < 40% |
+| Generated code, then asked follow-up "why" questions | ≥ 65% |
+| Asked for code and explanation together | ≥ 65% |
+| **Asked only conceptual questions and fixed their own errors** | **≥ 65%** (and second fastest) |
 
-**同一个工具，用法决定结果。** 每次和 AI 交互前问自己一句：**"这次我要的是结果，还是能力？"** 两者都正当，混在一起才是陷阱。
+**Same tool, different usage, different outcome.** Before each interaction, ask yourself: **"Do I want the result this time, or the ability?"** Both are legitimate. Mixing them up is the trap.
 
-### 2.5 困难是信号，不是噪音
+### 2.5 Difficulty is the signal, not the noise
 
-心理学家 Robert Bjork 提出了"**合意的困难**"（desirable difficulties）：一些让学习**当下感觉更难、进展更慢**的条件，反而会显著提升长期记忆和迁移能力，比如自测、间隔、交错、先尝试再学。
+Psychologist Robert Bjork coined the term **desirable difficulties**: conditions that make learning *feel* harder and slower in the moment, yet substantially improve long-term retention and transfer. Examples are self-testing, spacing, interleaving, and attempting a problem before being taught.
 
-**但并非所有困难都是合意的。** 配了一下午环境、翻遍论坛找不到合适的资料、对着一本写得很烂的教材硬啃，这些困难**和学习目标无关**，认知负荷理论称之为"外在负荷"。**这正是 AI 应该消灭的东西。**
+**Not all difficulty is desirable, though.** An afternoon lost to setting up an environment, hours of searching forums for decent material, slogging through a badly written textbook: these struggles have **nothing to do with the learning goal**. Cognitive load theory calls this *extraneous load*. **This is exactly what AI should eliminate.**
 
-于是得到本文的总原则：
+That gives the governing principle of this post:
 
-| 非学习性摩擦（交给 AI） | 学习性摩擦（自己保留） |
+| Non-learning friction (hand to AI) | Learning friction (keep for yourself) |
 |---|---|
-| 找资料、筛选资料、判断从哪学起 | 从记忆中提取 |
-| 把晦涩的表述翻译成你能懂的话 | 用自己的话解释 |
-| 配环境、装工具、查非目标技能的语法细节 | 给提示前先独立尝试 |
-| 生成练习题、批改、给反馈 | 犯错，并诊断自己的错误 |
-| 排计划、整理格式 | 建立概念之间的联系 |
-| 生成可视化、模拟、例子 | 做决定、做判断 |
+| Finding and filtering material; deciding where to start | Retrieving from memory |
+| Translating obscure writing into language you can follow | Explaining in your own words |
+| Setting up environments and tools; syntax details outside the target skill | Attempting before asking for a hint |
+| Generating exercises, grading, giving feedback | Making mistakes and diagnosing them |
+| Scheduling, formatting notes | Connecting concepts to each other |
+| Generating visualizations, simulations, examples | Making decisions and judgments |
 
-注意：**同一件事属于哪一类，取决于你的学习目标。** 如果你在学 Linux 运维，配环境就是学习性摩擦。
+Note: **which column an activity falls into depends on what you are trying to learn.** If you are learning Linux administration, setting up the environment *is* learning friction.
 
-### 2.6 知识的四层：知道、理解、会做、品味
+### 2.6 Four layers of knowledge: know, understand, do, judge
 
-| 层次 | 标志 | AI 能帮多少 |
+| Layer | What it looks like | How much AI can help |
 |---|---|---|
-| **知道** | 能复述 | 几乎可以无限加速 |
-| **理解** | 能解释为什么、能预测 | 需要你自己的生成性加工，AI 提供材料和追问 |
-| **会做** | 在新情境里能执行 | 需要大量练习加反馈。很多技能是"隐性知识"：Polanyi 说"我们知道的比我们能说出来的更多" |
-| **品味** | 能分辨好坏、做出取舍 | 需要大量案例和专家反馈，最慢 |
+| **Know** | You can state it | Can be accelerated almost without limit |
+| **Understand** | You can explain why and predict | Needs your own generative processing; AI supplies material and questions |
+| **Do** | You can execute in a new situation | Needs lots of practice plus feedback. Much of it is tacit knowledge: as Polanyi said, "we can know more than we can tell" |
+| **Judge** | You can tell good from bad and make trade-offs | Needs many cases and expert feedback; the slowest layer |
 
-**"短期内快速掌握"的诚实定义**：在几周内达到"**胜任的新手**"，也就是能看懂领域里的主流讨论，能独立完成入门级的真实任务，能判断 AI 的回答靠不靠谱，能继续自学。成为专家仍然需要以年计的刻意练习（Ericsson et al., 1993），但 AI 能显著缩短"从零到能用"这一段。
+**An honest definition of "mastering something quickly":** within a few weeks, becoming a **competent beginner**. You can follow mainstream discussion in the field, complete entry-level real tasks on your own, tell whether an AI's answer is trustworthy, and keep learning by yourself. Becoming an expert still takes years of deliberate practice (Ericsson et al., 1993). What AI can do is shorten the "zero to useful" stretch a lot.
 
-Bloom（1984）发现，一对一辅导的学生成绩比普通课堂高出约 2 个标准差（"2 sigma 问题"）。后来更严谨的元分析给出的效应小一些，约 0.37 个标准差（Nickow et al., 2020），但依然很大。**AI 让一对一辅导几乎免费了，前提是你把它当导师用，而不是当答案机用。**
+Bloom (1984) found that students with one-on-one tutoring scored about two standard deviations above students in a regular classroom (the "2 sigma problem"). Later, more careful meta-analyses find a smaller but still large effect of about 0.37 standard deviations (Nickow et al., 2020). **AI makes one-on-one tutoring nearly free, but only if you use it as a tutor and not as an answer machine.**
 
-### 2.7 学习者的新角色：从接收者到导演
+### 2.7 The learner's new role: from audience to director
 
-过去，课程由别人设计，你负责消化。现在，你可以自己设计课程、自己生成练习、随时得到反馈。**自由意味着责任**，而证据显示，最弱势的学习者最容易被这种自由带偏（见第 3.3 节）。所以小白需要的不是更多意志力，而是**写进系统里的护栏**。
+It used to be that someone else designed the curriculum and you absorbed it. Now you can design your own curriculum, generate your own exercises and get feedback anytime. **Freedom brings responsibility**, and the evidence shows that the most vulnerable learners are the ones most easily led astray by that freedom (see Section 3.3). So what a beginner needs is not more willpower, but **guardrails built into the system**.
 
-网上流传的一段 Karpathy 的学习建议（二手整理）和本文的方法高度一致：**以具体项目为牵引，按需深入学习，而不是自底向上铺开；用自己的话教授或总结学到的一切；只和过去的自己比较。**
-
----
-
-## 3. 证据底座
-
-### 3.1 学习科学：哪些方法被反复验证过
-
-| 方法 | 是什么 | 证据 | AI 时代怎么用 |
-|---|---|---|---|
-| **提取练习** | 合上资料，从记忆里写出或答出 | 【强】Roediger & Karpicke 2006；Dunlosky 2013 评为高效用 | 学完先闭卷复述，再看 AI 讲解；让 AI 出题，你作答 |
-| **间隔重复** | 隔一段时间再复习 | 【强】Cepeda 2008：想记一周，最优间隔约为 20–40%（即 1–3 天）；想记一年，约为 5–10%（约 3–5 周） | 开启 FSRS 的 Anki；AI 帮你把错题改写成卡片 |
-| **交错练习** | 不同类型的题混在一起练 | 【强】Rohrer 2020：787 名初中生，一个月后 61% vs 38%，d=0.83 | 让 AI 出不标章节的混合题集 |
-| **预测试** | 学之前先答题，哪怕答错 | 【中-强】Richland 2009；Kornell 2009。前提是之后有反馈 | 每个新概念先让 AI 问你 3 个问题 |
-| **自我解释 / 精细化追问** | 问"为什么""和什么有关" | 【中】Chi 1989；Dunlosky 评为中等 | 费曼反转：你讲给 AI 听，它扮演较真的学生 |
-| **有成效的失败** | 先尝试解决问题，再听讲解 | 【中】Sinha & Kapur 2021 元分析（53 项研究）：对概念理解尤其有效，但需要一定的先备知识 | 先独立做 10–15 分钟，再要提示 |
-| **样例效应与专长反转** | 新手先看完整样例，熟练后撤掉脚手架 | 【强】认知负荷理论（Sweller）；Kalyuga 2003 | 随着水平提高，调高 AI 提示的起点 |
-| **具体例子与多重表征** | 先具体后抽象，文字配图像 | 【中】 | 让 AI 生成可交互的可视化或模拟 |
-| **高置信错误的纠正** | 很有把握却答错，被纠正后记得特别牢 | 【中】Butterfield & Metcalfe 2001 | 每次作答先标注 1–5 的信心值 |
-| **为教而学** | 预期要教别人时，学得更好 | 【中】Nestojko 2014 | 每周写一篇博客、讲一次给别人听 |
-| **重读、划线、总结** | — | 【强】Dunlosky 2013 评为低效用 | **被动看 AI 讲解 ≈ 重读** |
-
-**三个流行神话**（AI 时代可能还会以"个性化"的名义复活）：
-
-- **学习风格**（视觉型、听觉型……）：没有证据表明按"风格"匹配教学能提升学习（Pashler et al., 2008）。**AI 应该按"你已经知道什么"来个性化，而不是按"你是什么类型"来个性化。**
-- **速读**：阅读速度和理解深度之间存在硬性权衡（Rayner et al., 2016）。
-- **脑力训练游戏**：在训练任务上会变强，但向日常认知能力的迁移证据很弱（Simons et al., 2016）。
-
-### 3.2 AI 与学习：2024–2026 年的关键实验
-
-| 研究 | 对象与设计 | 结果 | 要点 |
-|---|---|---|---|
-| **Bastani et al., PNAS 2025** | 土耳其近 1000 名高中生学数学；GPT Base（类 ChatGPT）、GPT Tutor（只给提示）、无 AI 三组 | 练习中 Base 成绩高 48%，Tutor 高 127%；**撤掉 AI 后考试，Base 组比对照组低 17%**，Tutor 组与对照组持平 | 有 AI 时的表现 ≠ 学习效果；护栏能挡住伤害 |
-| **Kestin et al., Sci. Rep. 2025** | 哈佛物理课 194 人，交叉随机设计 | AI 导师组的学习增益显著更大（作者报道超过课堂组的两倍），用时更短 | 导师按课程教学法设计：一次只给一步，不一次性给出完整解答 |
-| **世界银行，尼日利亚 2025** | 759 名中学生，6 周课后 GPT-4 辅导 | 综合成绩提升 0.31 个标准差（英语 0.23） | 对照组没有额外的学习时间，所以效应里混入了"多学了 6 周"的成分 |
-| **Shen & Tamkin（Anthropic）2026** | 52 名开发者学习陌生的 Trio 库 | 测验 50% vs 67%（d≈0.74），速度无显著提升；概念提问型 ≥65%，完全委托型 <40% | 同一个工具，用法决定结果 |
-| **Kosmyna et al.（MIT）2025 预印本** | 54 人写作文，测脑电 | LLM 组的大脑连接最弱，多数人无法准确引用自己几分钟前写的文章 | 小样本、未经同行评审；作者本人反对"AI 让大脑腐烂"式的解读 |
-| **Lee et al.（Microsoft/CMU）CHI 2025** | 319 名知识工作者问卷 | 越信任 AI，批判性思考越少；越相信自己，批判性思考越多 | 自报数据，只说明相关性 |
-| **Liu, Sweet et al.（马里兰大学）2026 工作论文** | 2379 名本科生、30 位教师；按教师随机决定是否在课程平台提供 GPT-4o 学习助手 | 同一门课内比较，期末成绩低 0.37 个标准差；课程平台参与度低 0.90 个标准差；第一代大学生受损更大；只有约 15% 的学生用过 | 全样本下成绩效应不显著；体现了"挤出效应" |
-
-### 3.3 从这些证据里能得出的五条结论【推演】
-
-1. **AI 对学习的影响往哪个方向走，由交互设计决定，而不是由模型能力决定。** 成功案例的共同点：一次只给一步、不直接给完整答案、要求学生先产出、嵌在结构化课程里。失败案例的共同点：没有护栏、直接给答案、替代了原有的学习活动。
-2. **练习中的表现不等于学会了。** AI 能大幅提高"有 AI 时"的表现，同时降低"没有 AI 时"的能力，所以衡量必须**拔掉插头**。
-3. **小白恰恰是高风险人群。** 越是新手、越不自信、越缺乏学习支持的人，越容易被 AI 的便利带偏（马里兰研究中的第一代大学生；Lee 研究中自信低的人；Anthropic 研究的参与者也大多是初级工程师）。
-4. **AI 可能"挤出"原本有效的学习活动。** AI 应该**嵌入**你的学习系统，而不是**取代**它。
-5. **护栏必须写进系统，不能指望意志力**：学习模式、系统提示词、物理隔离、固定的规则。
+A widely shared piece of learning advice attributed to Andrej Karpathy (second-hand summary) lines up closely with this method: **take on concrete projects and go deep, learning on demand rather than bottom-up and breadth-first; teach or summarize everything you learn in your own words; compare yourself only to your younger self.**
 
 ---
 
-## 4. 方法论：HBL 高带宽学习法
+## 3. The evidence base
 
-### 4.1 三个时间尺度
+### 3.1 Learning science: which methods have been replicated
 
-| 尺度 | 单位 | 结构 |
+| Method | What it is | Evidence | How to use it in the AI era |
+|---|---|---|---|
+| **Retrieval practice** | Close the material and write or answer from memory | [Strong] Roediger & Karpicke 2006; rated high utility by Dunlosky 2013 | Recall from memory *before* reading the AI's explanation; have AI quiz you |
+| **Spaced repetition** | Review again after a gap | [Strong] Cepeda 2008: to remember for a week, the best gap is about 20–40% of that (1–3 days); for a year, about 5–10% (3–5 weeks) | Anki with FSRS scheduling; AI helps turn your mistakes into cards |
+| **Interleaving** | Mix different problem types together | [Strong] Rohrer 2020: 787 middle-schoolers, one month later 61% vs 38%, d = 0.83 | Ask AI for mixed problem sets with no chapter labels |
+| **Pretesting** | Answer questions before studying, even if you get them wrong | [Moderate–Strong] Richland 2009; Kornell 2009; requires feedback afterward | Have AI ask you 3 questions before each new concept |
+| **Self-explanation / elaborative interrogation** | Ask "why?" and "how does this connect?" | [Moderate] Chi 1989; rated moderate by Dunlosky | Reverse Feynman: you explain to AI, which plays a stubborn student |
+| **Productive failure** | Try to solve the problem first, then get instruction | [Moderate] Sinha & Kapur 2021 meta-analysis (53 studies): especially effective for conceptual understanding; needs some prior knowledge | Work alone for 10–15 minutes before asking for a hint |
+| **Worked examples & expertise reversal** | Beginners study full worked examples; remove the scaffolding as skill grows | [Strong] Cognitive load theory (Sweller); Kalyuga 2003 | Raise the starting rung of the AI hint ladder as you improve |
+| **Concrete examples & multiple representations** | Concrete before abstract; words plus pictures | [Moderate] | Have AI build interactive visualizations or simulations |
+| **Correcting high-confidence errors** | Confident wrong answers, once corrected, stick especially well | [Moderate] Butterfield & Metcalfe 2001 | Rate your confidence 1–5 before each answer |
+| **Learning by teaching** | You learn better when you expect to teach | [Moderate] Nestojko 2014 | Write a blog post or teach someone every week |
+| **Rereading, highlighting, summarizing** | — | [Strong] rated low utility by Dunlosky 2013 | **Passively reading AI explanations ≈ rereading** |
+
+**Three popular myths** that may come back under the banner of AI "personalization":
+
+- **Learning styles** (visual, auditory, …): there is no evidence that matching instruction to a "style" improves learning (Pashler et al., 2008). **AI should personalize to what you already know, not to what "type" you are.**
+- **Speed reading**: there is a hard trade-off between reading speed and comprehension (Rayner et al., 2016).
+- **Brain-training games**: you get better at the trained games, but evidence of transfer to everyday cognition is weak (Simons et al., 2016).
+
+### 3.2 AI and learning: the key experiments of 2024–2026
+
+| Study | Participants & design | Results | Takeaway |
+|---|---|---|---|
+| **Bastani et al., PNAS 2025** | ~1,000 Turkish high-school math students; GPT Base (ChatGPT-like), GPT Tutor (hints only), and no-AI groups | During practice, Base scored 48% higher and Tutor 127% higher; **on the exam without AI, Base scored 17% below control**, Tutor matched control | Performance with AI ≠ learning; guardrails block the harm |
+| **Kestin et al., Sci. Rep. 2025** | 194 students in a Harvard physics course, randomized crossover | AI tutor group showed significantly larger learning gains (reported as more than double the classroom group) in less time | Tutor built on the course's pedagogy: one step at a time, never the full solution at once |
+| **World Bank, Nigeria 2025** | 759 secondary students, 6 weeks of after-school GPT-4 tutoring | +0.31 SD overall (+0.23 SD in English) | Control group got no extra study time, so the effect includes "six more weeks of study" |
+| **Shen & Tamkin (Anthropic) 2026** | 52 developers learning the unfamiliar Trio library | Quiz 50% vs 67% (d ≈ 0.74); no significant speedup; conceptual askers ≥65%, full delegators <40% | Same tool, usage decides the outcome |
+| **Kosmyna et al. (MIT) 2025 preprint** | 54 participants writing essays, with EEG | LLM group showed the weakest brain connectivity; most could not accurately quote the essay they had just written | Small sample, not peer-reviewed; the lead author rejects "AI rots your brain" readings |
+| **Lee et al. (Microsoft/CMU) CHI 2025** | Survey of 319 knowledge workers | More trust in AI → less critical thinking; more self-confidence → more | Self-reported; correlation only |
+| **Liu, Sweet et al. (U. Maryland) 2026 working paper** | 2,379 undergrads and 30 instructors; instructors randomly assigned to offer a GPT-4o study assistant in the course platform | Within the same course, final grades 0.37 SD lower; course-platform engagement 0.90 SD lower; larger losses for first-generation students; only ~15% of students ever used it | No significant grade effect in the full sample; points to a "crowding-out" effect |
+
+### 3.3 Five conclusions from the evidence [Inference]
+
+1. **Interaction design, not model capability, decides which way AI moves learning.** The successes share a pattern: one step at a time, no full answers up front, the student produces first, and the tool is embedded in a structured course. The failures share another: no guardrails, direct answers, and AI replacing existing learning activities.
+2. **Performance during practice is not learning.** AI can sharply raise performance *with* AI while lowering ability *without* it. Measure with the plug pulled.
+3. **Beginners are the high-risk group.** The newer, the less confident and the less supported the learner, the more easily AI's convenience leads them astray (first-generation students in the Maryland study; low self-confidence in Lee et al.; mostly junior engineers in the Anthropic study).
+4. **AI can crowd out learning activities that were already working.** AI should be **embedded** in your learning system, not **replace** it.
+5. **Guardrails have to be built into the system, not left to willpower**: learning modes, system prompts, physical separation, fixed rules.
+
+---
+
+## 4. The method: High-Bandwidth Learning (HBL)
+
+### 4.1 Three time scales
+
+| Scale | Unit | Structure |
 |---|---|---|
-| **宏观** | 周、月（一个领域或项目） | 定靶 → 测绘 → 骨架 → 循环 → 实战 → 校准 |
-| **中观** | 天（一个概念） | 猜 → 学 → 合 → 讲 → 练 → 记 |
-| **微观** | 分钟（每一次和 AI 交互） | 先想后问 + 提示阶梯 + AI 红绿灯 |
+| **Macro** | Weeks to months (a field or project) | Target → Map → Skeleton → Loop → Build → Calibrate |
+| **Meso** | A day (one concept) | Predict → Study → Recall → Explain → Practice → Capture |
+| **Micro** | Minutes (every AI interaction) | Think before you ask + the hint ladder + the AI traffic light |
 
-### 4.2 宏观流程
+### 4.2 The macro flow
 
-#### Step 0 定靶（半天）
+#### Step 0: Target (half a day)
 
-把"学会 X"翻译成**可以检验的能力清单**。直接照下面的模板填：
+Turn "learn X" into a **checklist of abilities you can actually test**. Fill in this template:
 
 ```
-我能独立完成的 3 个真实任务：
+3 real tasks I will be able to do on my own:
 1.
 2.
 3.
-我能向外行讲清楚的 5 个核心问题：
-我能判断对错的 3 类说法：
-毕业考（现在就写下来）：一个不用 AI、限时完成的综合任务
+5 core questions I will be able to explain to a layperson:
+3 kinds of claims I will be able to judge as right or wrong:
+Final exam (write it now): a timed, integrated task done without AI
 ```
 
-原则是**直接性**（Scott Young 在 *Ultralearning* 里的说法）：学习方式要尽量贴近你最终使用这项能力的场景。
+The principle is **directness** (Scott Young's term in *Ultralearning*): learn in a setting as close as possible to where you will actually use the skill.
 
-#### Step 1 测绘（2–4 小时）
+#### Step 1: Map (2–4 hours)
 
-- 用 AI 生成**领域地图**：15–30 个核心概念、它们之间的依赖关系、前置知识、新手常见误区、专家和新手的关键差异、公认的经典资源（见第 5 节 P1）。
-- **交叉验证**：至少用两个不同的模型，再拿一份真实的大学课程大纲或经典教材目录做对照。**几份地图不一致的地方，正是最值得追问的地方。**
-- **诊断测验**：让 AI 出 15–20 道覆盖前置知识的题，闭卷作答，找到自己的起点（P2）。
-- **选定一条主线资源**：1 本教材或 1 门课作为"脊柱"，AI 作为围绕脊柱的导师。原因是 AI 擅长回答问题，却不擅长保证内容覆盖全面、顺序合理；成熟课程经过多年迭代形成的顺序非常宝贵，这也是马里兰"挤出效应"给我们的教训。
-- **产出**：一张你**自己画**的一页纸地图（AI 的版本只作参考）。
+- Have AI generate a **field map**: 15–30 core concepts, their dependencies, prerequisites, common beginner misconceptions, the key differences between how experts and novices see the field, and the canonical resources (see P1 in Section 5).
+- **Cross-check**: use at least two different models, plus a real university syllabus or the table of contents of a classic textbook. **Where the maps disagree is exactly what to dig into.**
+- **Diagnostic test**: have AI write 15–20 questions covering the prerequisites and answer them closed-book to find your starting point (P2).
+- **Pick one spine resource**: one textbook or one course is the spine, and AI is the tutor wrapped around it. AI is good at answering questions but not at guaranteeing coverage or a sensible order. A mature course's sequence has been refined over years and is valuable. That's the lesson of the Maryland crowding-out result.
+- **Output**: a one-page map you **draw yourself** (the AI version is only a reference).
 
-#### Step 2 骨架（1–3 天）
+#### Step 2: Skeleton (1–3 days)
 
-- 先学 5–9 个"大概念"，每个只学到"能用一句话说清楚，再加一个例子"的程度。
-- 产出一份"**一页纸领域概论**"，**每周重写一次**。看着它从幼稚变得精确，它本身就是你的进度条。
+- Learn the 5–9 "big ideas" first, each only to the level of "one sentence plus one example".
+- Write a **one-page overview of the field** and **rewrite it every week**. Watching it go from naive to precise is your progress bar.
 
-#### Step 3 循环（占主体时间，见 4.3）
+#### Step 3: Loop (most of your time; see 4.3)
 
-#### Step 4 实战（从第一周开始，贯穿全程）
+#### Step 4: Build (starts in week one and runs throughout)
 
-- 每周至少一个"**拔掉 AI 也能做出来**"的小项目，外加一个允许 AI 辅助的较大项目。
-- **驾驶员规则**：你开车，AI 导航。AI 写的每一行代码、给的每一个结论，你都必须能解释、能复现。做不到的部分，就是下一轮循环的学习内容。
-- **产出要公开**（博客、GitHub、讲给朋友听）：这同时带来"为教而学"的效果、外部反馈和动机。
+- At least one small project per week that **you can finish with AI unplugged**, plus one larger project where AI help is allowed.
+- **The driver rule**: you drive, AI navigates. You must be able to explain and reproduce every line of code and every conclusion AI gives you. Whatever you can't is the content of your next loop.
+- **Make your output public** (a blog, GitHub, explaining it to a friend). That gives you learning-by-teaching, outside feedback and motivation all at once.
 
-#### Step 5 校准（每周）
+#### Step 5: Calibrate (weekly)
 
-- **拔插头测试**：每周一次不用 AI 的闭卷测验或限时任务。
-- **信心校准**：作答前写下信心值（1–5），重点复盘"高信心却答错"的题。
-- **外部反馈**：找真人专家，去社区（论坛、开源 PR 的代码评审），做真实的考题或面试题。
-- 重写一页纸概论，更新地图，调整下周计划。
+- **The unplug test**: once a week, a closed-book quiz or timed task with no AI.
+- **Confidence calibration**: write a confidence score (1–5) before answering, and review the high-confidence misses first.
+- **Outside feedback**: real experts, communities (forums, code review on open-source PRs), real exam or interview questions.
+- Rewrite the one-page overview, update the map, adjust next week's plan.
 
-### 4.3 中观：概念循环「猜 → 学 → 合 → 讲 → 练 → 记」
+### 4.3 Meso: the concept loop — Predict → Study → Recall → Explain → Practice → Capture
 
-一个概念大约 60–90 分钟：
+One concept takes about 60–90 minutes:
 
-| 步骤 | 你做什么 | AI 做什么 | 背后的原理 | 时间 |
+| Step | You | AI | Why it works | Time |
 |---|---|---|---|---|
-| **1 猜** | 回答 2–3 个预测问题，写在纸上 | 出题，不给答案 | 预测试效应、好奇心 | 5 分钟 |
-| **2 学** | 带着刚才的问题读主线资源或听讲解 | 按你的水平讲解：先例子后抽象，提供多种表征，回答你的"为什么" | 样例效应、精细化加工 | 15–25 分钟 |
-| **3 合** | **合上一切**，写出核心观点、一个例子、它为什么成立、它和你已知的什么东西相连 | 无 | 提取练习、生成效应 | 5–10 分钟 |
-| **4 讲** | 讲给 AI 听（费曼法） | 扮演较真的学生或考官：追问、找漏洞、点出误区，**不直接给出正确版本** | 自我解释、为教而学 | 10–15 分钟 |
-| **5 练** | 做题或做小任务，先独立尝试 | 出能做对约 80%–85% 的交错题，按提示阶梯给提示并批改 | 提取、交错、反馈 | 20–30 分钟 |
-| **6 记** | 把错误和关键点写成卡片，记进错题日志 | 帮你修改卡片（你先写） | 间隔重复 | 5–10 分钟 |
+| **1 Predict** | Answer 2–3 prediction questions on paper | Asks the questions, gives no answers | Pretesting effect, curiosity | 5 min |
+| **2 Study** | Read the spine resource or a lesson, with those questions in mind | Explains at your level: example before abstraction, multiple representations, answers your "why" questions | Worked examples, elaboration | 15–25 min |
+| **3 Recall** | **Close everything.** Write down the core idea, an example, why it holds, and what you already know it connects to | Nothing | Retrieval practice, generation effect | 5–10 min |
+| **4 Explain** | Teach it to the AI (Feynman technique) | Plays a stubborn student or examiner: probes, finds holes, names misconceptions, **without handing you the correct version** | Self-explanation, learning by teaching | 10–15 min |
+| **5 Practice** | Do problems or a small task, attempting each one alone first | Generates interleaved problems you get right about 80–85% of the time; gives hints via the ladder; grades | Retrieval, interleaving, feedback | 20–30 min |
+| **6 Capture** | Turn mistakes and key points into flashcards and an error log | Helps polish your cards (you write them first) | Spaced repetition | 5–10 min |
 
-**时间比例**：第 2 步"学"不超过总时间的 1/3，**至少 2/3 的时间在输出**。
+**Time ratio**: Step 2 (Study) takes no more than a third of the time; **at least two-thirds goes to output**.
 
-### 4.4 微观：每一次和 AI 交互的规则
+### 4.4 Micro: the rules for every AI interaction
 
-**规则一：先想后问。** 在目标领域里，向 AI 提问之前，先写下你的猜测或尝试，哪怕只有一句话。这一个动作同时触发了预测试效应和生成效应，而且把 AI 的回答从"输入"变成了"**反馈**"。
+**Rule 1: Think before you ask.** In your target field, before you ask AI anything, write down your guess or attempt, even if it's one sentence. That single move triggers both the pretesting effect and the generation effect, and it turns the AI's reply from *input* into *feedback*.
 
-**规则二：卡住阈值。** 独立尝试 10–15 分钟仍没有进展，再请求第一级提示。不要硬卡两小时（会消耗动机），也不要卡 30 秒就问（等于没有生成）。
+**Rule 2: The stuck threshold.** Ask for a level-1 hint only after 10–15 minutes of real attempts with no progress. Don't grind for two hours (it drains motivation), and don't ask after 30 seconds (then nothing gets generated).
 
-**规则三：提示阶梯。**
+**Rule 3: The hint ladder.**
 
-| 等级 | 内容 |
+| Level | What you get |
 |---|---|
-| L1 | 一个引导性问题（"你考虑过 X 的边界情况吗？"） |
-| L2 | 点出相关概念或工具的名字 |
-| L3 | 给出第一步 |
-| L4 | 给出关键步骤，剩下的你来完成 |
-| L5 | 完整解答，**然后必须立刻独立做一道变式题，否则这道题不算数** |
+| L1 | One guiding question ("Have you considered the edge case where X?") |
+| L2 | The name of the relevant concept or tool |
+| L3 | The first step |
+| L4 | The key steps; you finish the rest |
+| L5 | The full solution. **Then you must immediately solve a variant on your own, or this problem doesn't count** |
 
-**规则四：AI 红绿灯**（适用于成长任务）
+**Rule 4: The AI traffic light** (for growth tasks)
 
-- 🟢 **绿灯**：找资源、解释术语、在你作答**之后**批改、出题、生成可视化、处理与目标技能无关的杂事
-- 🟡 **黄灯**（按规矩用）：提示（走阶梯）、样例（只在新手期用，逐步撤除）、总结（只在你写完自己的总结之后拿来对照）
-- 🔴 **红灯**：你还没尝试就给答案；替你写你正在学着写的东西；替你调试目标技能里的 bug；替你包办笔记和卡片
+- 🟢 **Green**: finding resources, explaining jargon, grading *after* you answer, generating problems, building visualizations, handling chores outside the target skill
+- 🟡 **Yellow** (follow the protocol): hints (via the ladder), worked examples (beginner phase only, then fade them out), summaries (only to compare against yours after you write it)
+- 🔴 **Red**: answers before you've tried; writing the very thing you're learning to write; debugging bugs in your target skill for you; doing all the work of your notes and flashcards
 
-结果任务（工作 deadline 之类）不受这些规则约束，但要清楚自己是在"**借用**"而不是"**学会**"，有必要的话事后补一个循环。
+Result tasks (a work deadline, say) are exempt. Just be clear that you are **borrowing** ability, not **building** it, and run a loop afterward if it matters.
 
-### 4.5 把护栏写进系统
+### 4.5 Build the guardrails into the system
 
-- **用学习模式**：主流 AI 产品都推出了学习模式（Claude 的学习模式、ChatGPT 的 Study Mode、Gemini 的 Guided Learning 等），它们默认会引导你思考，而不是直接给答案。
-- **或者建一个专门的"学习项目"**，放进第 5 节的 P0 系统提示词，和日常问答彻底分开。
-- **物理隔离**：学习时只开学习项目的窗口；"结果型"的 AI 用法放在另一个项目或账号里。
-- **把四条规则写在纸上，贴在显示器旁边。**
-
----
-
-## 5. Prompt 工具箱
-
-下面的 prompt 可以直接复制，把【】里的内容换成你自己的。
-
-### P0 学习导师系统提示词（放进学习项目的自定义指令）
-
-```
-你是我的学习导师，目标是让我真正掌握【领域】，而不是帮我完成任务。规则：
-1. 不要直接给出答案或完整解答。先问我是怎么想的。
-2. 我卡住时，按以下顺序逐级给提示，每次只升一级，然后等我回应：
-   L1 一个引导性问题 → L2 相关概念的名称 → L3 第一步 → L4 关键步骤 → L5 完整解答。
-   给出 L5 之后，立刻出一道变式题让我独立完成。
-3. 讲解时先给一个具体例子，再给抽象定义；尽量用我已经掌握的概念做类比，
-   并指出类比在哪里失效。我目前的水平：【……】。
-4. 每讲完一个要点，用一个具体问题检查我是否理解，不要问"你懂了吗"。
-5. 我答错时不要立刻纠正，先问一个能让我自己发现矛盾的问题。
-6. 如果我的问题暴露出概念误区，明确指出这个误区叫什么、通常是怎么产生的。
-7. 涉及具体事实、数字、API 时，标出你的把握程度；不确定就直说，并告诉我去哪里核实。
-8. 如果我直接要答案，提醒我一次这条规则；如果我坚持并说明这是"结果任务"，再给。
-```
-
-### P1 领域地图
-
-```
-我想在【N 周】内从零达到【具体的目标能力】。我的背景是【……】。请给出：
-1. 这个领域最核心的 15–25 个概念，按依赖关系分层（哪些必须先学）；
-2. 每个概念用一句话解释，并说明它为什么重要；
-3. 需要哪些前置知识，以我的背景可能缺哪些；
-4. 新手最常见的 5–10 个误区；
-5. 专家和新手看待这个领域时最大的 3 个差异；
-6. 公认的 3–5 个经典学习资源（教材或课程），注明哪个适合做主线；
-7. 哪些内容可以"随用随查"，哪些必须内化。
-不要说学习建议之类的空话，要具体。
-```
-
-交叉验证时追问：`这是另一个模型（或某大学课程大纲）给出的地图：【……】。请对比两者的差异，指出哪些差异值得我注意，以及原因。`
-
-### P2 诊断测验
-
-```
-根据上面的地图出 15 道诊断题，覆盖前置知识和核心概念，从易到难。
-一次只出一道，等我作答（我会附上 1–5 的信心值），然后告诉我对错并简短解释，再出下一道。
-全部做完后，列出：我已经掌握的、部分掌握的、完全空白的概念，以及建议的起点。
-```
-
-### P3 预测试
-
-```
-我接下来要学【概念】。学之前先问我 3 个问题：一个考直觉预测，一个考它和我已知概念的联系，
-一个考它能解决什么问题。不要给答案，我学完之后再回来对照。
-```
-
-### P4 分层讲解
-
-```
-用三个层次解释【概念】：
-(1) 一个可以手算或在脑子里想象的具体例子；
-(2) 一个基于我已知的【X】的类比，并说明这个类比在哪里失效；
-(3) 严格的定义。
-最后告诉我：真正理解这个概念的人能做到、而不理解的人做不到的一件事是什么。
-```
-
-### P5 费曼反转
-
-```
-我来给你讲【概念】。请扮演一个聪明但对这个领域完全不懂的大一学生：
-- 只要我用了没解释过的术语，就打断我；
-- 对每一个"因为"追问一次"为什么"；
-- 我讲完后，指出我讲解里最含糊的 2 处和可能的错误。不要直接给正确版本，用问题引导我自己修正。
-```
-
-### P6 苏格拉底考官
-
-```
-就【概念】给我做一次口试。从简单的问题开始，根据我的回答逐步加深，
-专门针对这个概念的常见误区来设计问题。每次只问一个问题。
-问完 10 个问题后给我一份诊断：哪些地方是真懂，哪些是背下来的，哪些是误解。
-```
-
-### P7 出题机
-
-```
-给我出一组练习题：
-- 混合覆盖【今天的概念】和【之前学过的概念 A、B、C】，打乱顺序，不标注属于哪个知识点；
-- 难度控制在我大约能做对 80%–85%；
-- 至少 1 道"迁移题"：换一个表面情境，考同一个原理；
-- 至少 1 道"找错题"：给一段包含错误的推理或代码，让我找出错误。
-一次只给一道题，按提示阶梯给提示，不要主动给答案。
-```
-
-### P8 错题诊断
-
-```
-这是我做错的题和我的解题过程：【……】
-不要直接给正确答案。先帮我判断错误属于哪一类：
-(a) 概念误解 (b) 缺少前置知识 (c) 粗心或执行错误 (d) 不知道该用哪种方法（策略错误）
-然后针对这一类错误，给我设计一个最小的练习来修复它。
-```
-
-### P9 卡片打磨
-
-```
-这是我写的记忆卡片（问题/答案）：【……】
-按以下原则帮我修改，但保留我的措辞风格：一张卡只考一个点；问题必须能唯一确定答案；
-优先考"为什么"和"怎么用"，而不是孤立的定义。如果某张卡其实不值得记（随时可查），直接建议删掉。
-```
-
-### P10 事实核查
-
-```
-把你刚才回答里所有具体的事实性陈述（数字、日期、API、公式、引用）列出来，
-逐条标注把握程度（高/中/低），以及可以去哪个一手来源核实。有任何一条不确定，请明确说出来。
-```
-
-### P11 周复盘
-
-```
-这是我本周的学习日志和测验结果：【……】
-请帮我：1) 找出我反复出错的模式；2) 判断地图上哪些概念应该从"学习中"移到"已掌握"，或者反过来；
-3) 给出下周的重点（不超过 3 个）；4) 设计一份下周末的"拔插头测试"。
-```
+- **Use a learning mode.** The major AI products now ship one (Claude's learning mode, ChatGPT's Study Mode, Gemini's Guided Learning, and others). By default they guide you to think instead of handing over answers.
+- **Or set up a dedicated "learning project"** with the P0 system prompt from Section 5, kept completely separate from everyday Q&A.
+- **Physical separation**: while studying, keep only the learning project's window open. Put "result" use of AI in a different project or account.
+- **Write the four rules on paper and stick them next to your monitor.**
 
 ---
 
-## 6. 难点处理手册
+## 5. Prompt toolkit
 
-每一条都按 **症状 → 本质 → 处方** 来写。
+Copy these as-is and replace the [brackets] with your own details.
 
-### 6.1 起步阶段
+### P0: Tutor system prompt (put it in your learning project's custom instructions)
 
-#### 难点 1：不知道从哪开始，不知道自己不知道什么
+```
+You are my tutor. Your goal is for me to truly master [FIELD], not to get tasks done for me. Rules:
+1. Don't give me answers or full solutions directly. Ask me how I'm thinking about it first.
+2. When I'm stuck, give hints one level at a time, then wait for my reply:
+   L1 a guiding question → L2 the name of the relevant concept → L3 the first step
+   → L4 the key steps → L5 the full solution.
+   After an L5, immediately give me a variant problem to solve on my own.
+3. When explaining, give a concrete example before the abstract definition. Use analogies to
+   concepts I already know, and say where the analogy breaks. My current level: [...].
+4. After each key point, check my understanding with a specific question. Never ask "does that make sense?"
+5. When I answer wrong, don't correct me right away. First ask a question that lets me spot the contradiction myself.
+6. If my question reveals a misconception, name the misconception and explain where it usually comes from.
+7. For specific facts, numbers or APIs, state your confidence. If you're unsure, say so and tell me where to verify.
+8. If I ask for the answer directly, remind me of these rules once. If I insist and say it's a "result task", give it.
+```
 
-- **症状**：面对一个领域无从下手，搜出来的东西要么像天书，要么很浅。
-- **本质**：没有地图，就无法判断一条信息在哪个位置、有多重要。
-- **处方**：执行 Step 1 测绘。问 AI"一位顶尖教授会怎么设计这门课"；找一份真实的大学课程大纲当脊柱。**第一天的目标不是学懂，而是搞清楚"有哪些东西、它们分别在哪"。**
+### P1: Field map
 
-#### 难点 2：前置知识缺失，越补越多
+```
+I want to go from zero to [SPECIFIC TARGET ABILITY] in [N WEEKS]. My background: [...]. Please give me:
+1. The 15–25 most important concepts in this field, layered by dependency (what must come first);
+2. A one-sentence explanation of each, and why it matters;
+3. The prerequisites, and which ones I'm likely missing given my background;
+4. The 5–10 most common beginner misconceptions;
+5. The 3 biggest differences between how experts and novices see this field;
+6. 3–5 canonical learning resources (textbooks or courses), marking which one works best as the spine;
+7. Which content can be looked up on demand and which must be internalized.
+Be specific. No generic study advice.
+```
 
-- **症状**：学 A 需要 B，学 B 需要 C……一周后还在补数学。
-- **本质**：深度优先搜索没有设深度上限。
-- **处方**：
-  - **回溯最多两层**。再往下的部分先当"黑盒"：接受结论，记下它的接口（输入是什么、输出是什么、什么条件下成立），标为"待补"。
-  - **只补刚好够用的部分**：`只讲理解【A】所必需的那部分【B】，其余的跳过。`
-  - 每补完一层，**立刻回到原来的任务**。切换回去这个动作本身就是一次检验。
-  - 如果诊断测验显示前置知识大面积空白，就诚实地调整目标或时间表，不要硬冲。
+When cross-checking, follow up with: `Here is a map from another model (or a university syllabus): [...]. Compare it with yours, point out the differences worth my attention, and explain why.`
 
-#### 难点 3：信息过载、收藏癖、教程地狱
+### P2: Diagnostic test
 
-- **本质**：把"收集"误当成了"学习"。输入带来即时满足感，但只有输出才产生学习。
-- **处方**：只保留一条主线资源，其余都只是参考；输入和输出的时间比不超过 1:2；收藏夹设上限（比如 10 条），满了先删一条才能加新的；每看完一个教程，必须产出一个**改动过**的东西（不是照抄）；问自己"这条信息在我的地图上属于哪里"，答不出来就不看。
+```
+Based on the map above, write 15 diagnostic questions covering prerequisites and core concepts, from easy to hard.
+Give me one question at a time and wait for my answer (I'll include a 1–5 confidence score).
+Tell me whether I'm right with a short explanation, then give the next one.
+At the end, list the concepts I've mastered, partly mastered, and know nothing about, plus a suggested starting point.
+```
 
-### 6.2 理解阶段
+### P3: Pretest
 
-#### 难点 4：讲解看不懂
+```
+I'm about to learn [CONCEPT]. Before I start, ask me 3 questions: one testing my intuitive prediction,
+one about how it connects to things I already know, and one about what problem it solves.
+Don't give answers. I'll come back and compare after I've studied it.
+```
 
-- **本质**：讲解没有接到你已有的知识上（没有挂钩），或者一次给的信息超出了工作记忆的容量。
-- **处方**：用 P4 分三层讲解；要求"一次只讲一个点"；要具体的、能手算的小例子；换一种表征（图、表、代码、类比、物理直觉）；先问"这个概念要解决的是什么问题"，**先理解问题，再理解解法**；还是不懂，就回溯前置知识（见难点 2）。
+### P4: Layered explanation
 
-#### 难点 5：看懂了，但不会做（AI 时代被放大得最严重的问题）
+```
+Explain [CONCEPT] at three levels:
+(1) A concrete example I can compute by hand or picture in my head;
+(2) An analogy based on [X], which I already know, and where that analogy breaks down;
+(3) The rigorous definition.
+Finally, tell me one thing that someone who truly understands this concept can do that someone who doesn't, can't.
+```
 
-- **本质**：认出来 ≠ 想起来 ≠ 用出来，流畅感是假信号。
-- **处方**：每次觉得"我懂了"，立刻执行"合"：闭卷把它写出来；每个概念至少做一道"从一张白纸开始"的题；用"能不能给外行讲清楚"和"能不能举出一个新例子"作为判断标准；看完样例后，先做一道只改了表面的"孪生题"，再做一道改了结构的"变式题"。
+### P5: Reverse Feynman
 
-#### 难点 6：抽象概念建立不起直觉
+```
+I'm going to explain [CONCEPT] to you. Play a smart first-year student who knows nothing about this field:
+- Interrupt me whenever I use a term I haven't explained;
+- For every "because", ask "why?" once;
+- When I'm done, point out the 2 vaguest parts of my explanation and any likely errors.
+  Don't give me the correct version; use questions to lead me to fix it myself.
+```
 
-- **处方**：
-  - 让 AI 写一个**可交互的可视化或模拟**（拖动参数，看结果怎么变）。这在过去要花几小时，现在只要几分钟，是 AI 时代最被低估的学习红利之一。
-  - 手算一个最小的例子（2×2 的矩阵、3 个 token 的注意力）。
-  - 先预测，再观察，最后解释：改一个参数之前先猜结果。
-  - 找极端情况和边界条件。
-  - 反过来问："如果没有这个概念，会出什么问题？"
+### P6: Socratic examiner
 
-#### 难点 7：知识碎片化，连不起来
+```
+Give me an oral exam on [CONCEPT]. Start simple and go deeper based on my answers,
+designing questions specifically around this concept's common misconceptions. One question at a time.
+After 10 questions, give me a diagnosis: what I truly understand, what I've memorized, and what I've misunderstood.
+```
 
-- **处方**：自己画**概念图**，并在连线上写清楚关系（"A 是 B 的特例""A 导致 B"）；做**对比表**，把相似的概念放在一起比较（"X 和 Y 有什么区别，各自什么时候用"）；每周写一篇综合性的文章；做交错练习；让 AI 出"必须同时用到两个概念"的题。
+### P7: Problem generator
 
-### 6.3 练习与记忆阶段
+```
+Write me a problem set:
+- Mix [TODAY'S CONCEPT] with [EARLIER CONCEPTS A, B, C], shuffled, with no labels saying which topic each covers;
+- Pitch the difficulty so I get roughly 80–85% right;
+- At least 1 transfer problem: same principle, different surface context;
+- At least 1 spot-the-error problem: a piece of reasoning or code with a bug for me to find.
+One problem at a time. Give hints via the hint ladder, and never volunteer the answer.
+```
 
-#### 难点 8：记不住，学了就忘
+### P8: Error diagnosis
 
-- **本质**：缺少提取、缺少间隔；或者记的是孤立的碎片，没有挂到图式上。
-- **处方**：
-  - 用 Anki 并开启 FSRS 调度，每天 15–30 分钟，目标保留率设在 85%–90%。
-  - **只给"必须内化"的内容做卡片**（见 2.2 的分工），能随时查到的不做。
-  - **卡片自己先写**（利用生成效应），AI 只负责修改（P9）。卡片多问"为什么"和"什么时候用"，少问孤立的定义。
-  - 新内容当天睡前快速回忆一遍，第二天早上再回忆一遍。
-  - 每周重写一页纸概论，把碎片挂回骨架上。
+```
+Here's a problem I got wrong, with my working: [...]
+Don't give me the correct answer yet. First classify my error:
+(a) conceptual misunderstanding (b) missing prerequisite (c) careless or execution error
+(d) didn't know which method to use (strategy error)
+Then design the smallest possible exercise to fix that kind of error.
+```
 
-#### 难点 9：练习卡住
+### P9: Flashcard polish
 
-- **处方**：用 10–15 分钟阈值加提示阶梯；卡住时先写下"我卡在哪一步、已经试过什么"（这一步常常就能把问题解决掉，即"小黄鸭调试法"）；换一种表征重写问题；先解一个更简单的特例（Pólya，《怎样解题》）；睡一觉再看（酝酿效应）。
+```
+Here are flashcards I wrote (question/answer): [...]
+Improve them by these principles, keeping my wording style: one idea per card; each question has exactly one answer;
+prefer "why" and "when to use it" over isolated definitions. If a card isn't worth memorizing
+(I could just look it up), tell me to delete it.
+```
 
-#### 难点 10：学会了却不会迁移，换一道题就不会
+### P10: Fact check
 
-- **本质**：记住的是表面特征，没有抽出深层结构。
-- **处方**：同一个原理放进多种表面情境里练（变式练习）；**拿两个表面不同、结构相同的例子做比较**，写出它们共同的原理（类比比较对提取抽象原理很有效，Gentner et al., 2003）；用交错练习逼自己先判断"该用哪种方法"；多问"这个原理还能用在哪里"。
+```
+List every specific factual claim in your last answer (numbers, dates, APIs, formulas, citations).
+For each, give your confidence (high/medium/low) and a primary source where I can verify it.
+If you're unsure about any of them, say so explicitly.
+```
 
-#### 难点 11：进入平台期，感觉没有进步
+### P11: Weekly review
 
-- **本质**：要么练习难度不再匹配（太简单就是在舒适区重复，太难就会受挫），要么正处在需要重组图式的阶段，暂时"变差"是正常的。
-- **处方**：检查练习正确率，高于 95% 就加难度，低于 60% 就降难度；把训练集中在最薄弱的环节上（刻意练习）；用每周拔插头测试的趋势判断进度，而不是凭每天的感觉；翻出第一周的一页纸概论重读一遍，你会发现进步比感觉大得多。
-
-### 6.4 AI 特有的难点
-
-#### 难点 12：不知道 AI 说得对不对（幻觉）
-
-- **本质**：验证需要知识，而你正处在学习阶段。越冷门、越新、越具体（数字、引用）的内容，AI 越容易出错。
-- **处方**：
-  - 建立**可信度梯度**：成熟的教科书知识（很少出错）> 细节和数字 > 最新进展 > 小众领域和具体引用（经常出错）。
-  - **主线资源是最终裁判**：AI 负责解释，教材和官方文档负责定标。
-  - **能执行的就执行**：代码跑一遍，公式代入数值验算，推导自己走一遍。
-  - **交叉验证**：两个模型答案不一致的地方，恰恰是最值得深挖的学习点。
-  - 用 P10 让 AI 自己标出把握程度和一手来源；涉及引用时，一定回原文核对。
-  - **把"抓到 AI 的错误"当成一项成就**，这说明你的内部模型已经够强了。
-
-#### 难点 13：依赖 AI，把思考外包成了习惯
-
-- **症状**：遇到一点困难就想问；不开 AI 就不想动脑；感觉什么都会，一考就不会。
-- **处方**：严格执行先想后问、提示阶梯、红绿灯；设定**无 AI 时段**（比如每天第一个深度块）；每周做拔插头测试，用分数说话；学习专用的项目里开启学习模式；在日志里记下"今天我独立解决了几个问题"。
-
-#### 难点 14：不会提问
-
-- **处方**：
-  - 用提问阶梯：是什么 → 为什么 → 怎么做 → 什么条件下不成立 → 和 X 有什么区别 → 如果改变 Y 会怎样。
-  - 描述你**做了什么尝试、卡在哪里**，而不是只说"不懂"。
-  - 让 AI 反过来问你："为了帮到我，你最需要知道我的哪些信息？"
-  - 收集好问题。好问题本身就是知识。
-
-### 6.5 心理与习惯
-
-#### 难点 15：注意力涣散，忍不住刷手机
-
-- **处方**：手机放到另一个房间（光静音不够）；一个窗口只做一件事；通知全部关掉；每个深度块开始前写下"本块唯一目标"；冒出来的杂念写到一张"停车场"纸上，块结束后再处理。任务切换会留下"注意力残留"（Leroy, 2009），所以宁可少切换。
-
-#### 难点 16：拖延，启动困难
-
-- **处方**：把启动门槛降到 2 分钟（"打开 Anki 做 5 张卡"）；用**执行意图**："如果到了早上 8 点，我就坐到书桌前做预测试"（Gollwitzer, 1999）；每天结束时写下明天要做的第一件事，**故意留一道做到一半的题**，第二天更容易进入状态；**把 AI 当启动器**：让它先问你几个预测问题，回答问题比"开始学习"容易得多。
-
-#### 难点 17：动机衰减，半途而废
-
-- **处方**：用项目牵引，为了做出一个东西而学；让进度可见（一页纸概论的版本对比、地图上逐渐点亮的概念、测验分数曲线）；**公开学习**（写博客、发 GitHub），带来外部承诺和反馈；只和过去的自己比；允许"最小日"：状态再差也完成 15 分钟复习，保持链条不断。**动机常常是行动的结果，而不是行动的前提。**
-
-#### 难点 18：时间碎片化
-
-- **处方**：碎片时间做复习（刷卡片、口头复述、听自己录的讲解）；整块时间学新内容、做练习，新内容至少需要 45–90 分钟的连续时间；在碎片时间里向 AI 要一道"思考题"，带着它去走路或通勤。
-
-#### 难点 19：不知道自己的真实水平
-
-- **本质**：新手的自我评估普遍偏乐观，AI 鼓励性的语气又会加剧这一点。
-- **处方**：做信心校准（每题标注 1–5，统计高信心错误率）；用外部标准检验自己（真实的考试题、面试题、课程作业、开源项目的 issue）；让 AI 扮演严格的面试官，给出"会不会录用你"的判断和理由；找一位真人专家，每两周看一次你的产出。
-
-#### 难点 20：隐性知识和"手感"学不到
-
-- **本质**：一部分专家知识是说不出来的（Polanyi），只能靠做加反馈获得。
-- **处方**：大量做真实任务；看专家**工作的过程**，而不只是结果（直播、录屏、代码评审、论文的修改历史）；用"模仿-对比"法：自己先做，再看专家怎么做，写下差异；把作品交给 AI 或专家评审，问"专家会怎么改"；建一个案例库，每个案例记一句教训。
-
-#### 难点 21：读论文、读文档等硬核材料
-
-- **处方**：用三遍阅读法（Keshav, *How to Read a Paper*）：第一遍花 5–10 分钟看标题、摘要、图表和结论；第二遍抓主要内容；第三遍复现推导或逻辑。AI 辅助的方式：
-  - 读之前，让 AI 列出"读懂这篇需要哪些背景概念"，并就这些概念考考你；
-  - 读的过程中遇到卡点，用 P4；
-  - 读完先闭卷写一段摘要，再和 AI 的摘要对比，两者的差异就是你的学习点；
-  - 优先用基于原文回答的工具（只依据你上传的资料作答的那类），可以减少幻觉；
-  - **不要用 AI 摘要代替阅读本身**，那是叉车。
-
-#### 难点 22：焦虑、冒名顶替综合征、速度焦虑
-
-- **处方**：明确"快速掌握"的合理预期（见 2.6）；平台期和暂时变差都是学习过程的一部分；只追踪自己的曲线；睡眠和运动对情绪和学习都有帮助；记录"现在能做、但一个月前做不到的事"。
+```
+Here are my learning log and test results for this week: [...]
+Please: 1) find the error patterns I keep repeating; 2) decide which concepts on my map should move
+from "learning" to "mastered", or back; 3) give me next week's focus (3 items max);
+4) design next weekend's unplug test.
+```
 
 ---
 
-## 7. 日常习惯：大脑是你的学习硬件
+## 6. Troubleshooting guide
 
-### 7.1 生理层
+Each entry follows **Symptom → Root cause → Fix**.
 
-| 习惯 | 证据 | 做法 |
+### 6.1 Getting started
+
+#### Problem 1: You don't know where to start, or what you don't know
+
+- **Symptom**: You can't find a way in. Everything you search for is either impenetrable or shallow.
+- **Root cause**: Without a map, you can't tell where a piece of information sits or how much it matters.
+- **Fix**: Do Step 1 (Map). Ask AI "how would a top professor design this course?" and use a real university syllabus as your spine. **The goal of day one is not to understand anything. It's to learn what's out there and where it sits.**
+
+#### Problem 2: Prerequisites that keep multiplying
+
+- **Symptom**: A needs B, B needs C… a week later you're still patching up math.
+- **Root cause**: A depth-first search with no depth limit.
+- **Fix**:
+  - **Backtrack at most two levels.** Treat anything deeper as a black box: accept the result, note its interface (what goes in, what comes out, when it holds), and mark it "to fill in".
+  - **Learn just enough**: `Teach me only the part of [B] that's needed to understand [A]. Skip the rest.`
+  - After each backfill, **go straight back to the original task**. Switching back is itself a test.
+  - If the diagnostic shows large gaps in prerequisites, adjust the goal or the timeline honestly instead of forcing it.
+
+#### Problem 3: Information overload, hoarding, tutorial hell
+
+- **Root cause**: Mistaking *collecting* for *learning*. Input feels instantly rewarding, but only output produces learning.
+- **Fix**: One spine resource; everything else is reference. Keep input-to-output time at 1:2 or lower. Cap your bookmarks (say, 10) and delete one before adding another. After every tutorial, produce something you **changed**, not a copy. Ask "where does this go on my map?" and if you can't answer, skip it.
+
+### 6.2 Understanding
+
+#### Problem 4: The explanation makes no sense
+
+- **Root cause**: The explanation doesn't connect to anything you already know (no hooks), or it delivers more at once than working memory can hold.
+- **Fix**: Use P4 for a three-level explanation. Ask for "one point at a time". Ask for a small concrete example you can compute by hand. Switch representations (diagram, table, code, analogy, physical intuition). Ask first, "what problem is this concept solving?" — **understand the problem before the solution**. Still stuck? Backfill prerequisites (Problem 2).
+
+#### Problem 5: "I understand it, but I can't do it" (the problem AI amplifies most)
+
+- **Root cause**: Recognizing ≠ recalling ≠ producing. Fluency is a false signal.
+- **Fix**: Every time you feel "got it", immediately do Step 3 (Recall): write it out closed-book. Do at least one problem per concept starting from a blank page. Use "can I explain it to a layperson?" and "can I come up with a new example?" as your tests. After a worked example, first do a "twin" problem that changes only the surface, then a "variant" that changes the structure.
+
+#### Problem 6: You can't build intuition for an abstract idea
+
+- **Fix**:
+  - Have AI write an **interactive visualization or simulation** (drag a parameter, watch the result change). This used to take hours and now takes minutes. It's one of the most underrated learning gains of the AI era.
+  - Compute the smallest possible example by hand (a 2×2 matrix, attention over 3 tokens).
+  - Predict, observe, explain: guess the result before you change a parameter.
+  - Look for extreme cases and boundary conditions.
+  - Ask the reverse: "what would break without this concept?"
+
+#### Problem 7: Fragmented knowledge that doesn't connect
+
+- **Fix**: Draw your own **concept map** and label each link ("A is a special case of B", "A causes B"). Build **comparison tables** for similar concepts ("how are X and Y different, and when do I use each?"). Write a synthesis piece every week. Interleave your practice. Ask AI for problems that need two concepts at once.
+
+### 6.3 Practice and memory
+
+#### Problem 8: You forget everything
+
+- **Root cause**: No retrieval and no spacing, or what you stored is isolated fragments not attached to any schema.
+- **Fix**:
+  - Use Anki with FSRS scheduling enabled, 15–30 minutes a day, with target retention at 85–90%.
+  - **Make cards only for what must be internalized** (see the split in 2.2), not for things you can look up.
+  - **Write cards yourself first** (generation effect) and let AI only polish them (P9). Cards should ask "why" and "when to use it", not just definitions.
+  - Quickly recall new material before bed the same day, and again the next morning.
+  - Rewrite the one-page overview weekly to hang the fragments back on the skeleton.
+
+#### Problem 9: Stuck on a practice problem
+
+- **Fix**: Use the 10–15 minute threshold plus the hint ladder. When stuck, first write down "which step I'm stuck on and what I've tried" (often that alone solves it — rubber duck debugging). Restate the problem in a different representation. Solve a simpler special case first (Pólya, *How to Solve It*). Sleep on it (the incubation effect).
+
+#### Problem 10: You can't transfer: change the problem and you're lost
+
+- **Root cause**: You memorized surface features without extracting the deeper structure.
+- **Fix**: Practice the same principle across many surface contexts (varied practice). **Compare two examples that look different but share a structure**, and write down the common principle (analogical comparison is very effective for extracting abstract principles, Gentner et al., 2003). Use interleaving to force yourself to decide "which method applies?" first. Keep asking "where else would this principle work?"
+
+#### Problem 11: A plateau where nothing seems to improve
+
+- **Root cause**: Either practice difficulty no longer matches (too easy means repeating inside your comfort zone; too hard means frustration), or you're in a phase that requires restructuring your schemas, where getting temporarily worse is normal.
+- **Fix**: Check your practice accuracy: above 95%, make it harder; below 60%, make it easier. Concentrate training on your weakest link (deliberate practice). Judge progress by the trend in your weekly unplug tests, not by how a given day feels. Reread your week-one overview; you'll find you've improved far more than it feels.
+
+### 6.4 AI-specific problems
+
+#### Problem 12: You can't tell whether the AI is right (hallucinations)
+
+- **Root cause**: Verifying takes knowledge, and you're still acquiring it. The more niche, recent or specific (numbers, citations) the content, the more likely AI is to be wrong.
+- **Fix**:
+  - Keep a **trust gradient**: established textbook knowledge (rarely wrong) > details and numbers > recent developments > niche topics and specific citations (often wrong).
+  - **The spine resource is the final judge.** AI explains; the textbook and official docs calibrate.
+  - **If it can be executed, execute it**: run the code, plug numbers into the formula, work the derivation yourself.
+  - **Cross-check**: where two models disagree is exactly the point most worth digging into.
+  - Use P10 to make AI state its confidence and primary sources. For citations, always check the original.
+  - **Treat catching an AI mistake as an achievement.** It means your internal model is getting strong.
+
+#### Problem 13: Dependence on AI; outsourcing your thinking by habit
+
+- **Symptom**: Any small difficulty sends you to the AI. Without it you don't want to think. You feel you know everything, then fail the test.
+- **Fix**: Enforce think-before-you-ask, the hint ladder and the traffic light. Set **no-AI blocks** (for example, the first deep-work block each day). Take the unplug test weekly and let the score speak. Turn on learning mode in your learning project. Log "how many problems I solved on my own today".
+
+#### Problem 14: You don't know how to ask questions
+
+- **Fix**:
+  - Climb the question ladder: what is it → why → how → when does it fail → how is it different from X → what happens if I change Y.
+  - Describe **what you tried and where you got stuck**, not just "I don't get it".
+  - Turn it around and have AI ask you: "To help me, what do you most need to know about me?"
+  - Collect good questions. Good questions are themselves knowledge.
+
+### 6.5 Mindset and habits
+
+#### Problem 15: Distraction and phone-checking
+
+- **Fix**: Put your phone in another room (silent mode isn't enough). One window, one task. All notifications off. Before each deep-work block, write down the block's single goal. Write stray thoughts on a "parking lot" sheet and deal with them after the block. Switching tasks leaves *attention residue* (Leroy, 2009), so switch as little as possible.
+
+#### Problem 16: Procrastination; trouble getting started
+
+- **Fix**: Lower the start barrier to two minutes ("open Anki and do 5 cards"). Use **implementation intentions**: "If it's 8 a.m., I sit at my desk and do the pretest" (Gollwitzer, 1999). At the end of each day, write tomorrow's first task, and **deliberately leave a problem half-done** so tomorrow is easy to start. **Use AI as a starter motor**: have it ask you a few prediction questions; answering a question is much easier than "starting to study".
+
+#### Problem 17: Fading motivation; quitting halfway
+
+- **Fix**: Let a project pull you along: learn in order to build something. Make progress visible (versions of your one-page overview, concepts lighting up on your map, a test-score curve). **Learn in public** (blog posts, GitHub) for outside commitment and feedback. Compare yourself only to your past self. Allow "minimum days": however bad you feel, do 15 minutes of review so the chain never breaks. **Motivation is often the result of action, not its precondition.**
+
+#### Problem 18: Fragmented time
+
+- **Fix**: Use scraps of time for review (flashcards, reciting out loud, listening to recordings of your own explanations). Use solid blocks for new material and practice; new material needs 45–90 uninterrupted minutes at least. In a spare moment, ask AI for a "thinking question" and carry it with you on a walk or commute.
+
+#### Problem 19: You don't know your real level
+
+- **Root cause**: Beginners' self-assessments are generally optimistic, and AI's encouraging tone makes that worse.
+- **Fix**: Calibrate your confidence (rate every answer 1–5 and track your high-confidence error rate). Test against outside standards (real exam questions, interview questions, course assignments, issues in open-source projects). Have AI play a strict interviewer who says whether they'd hire you and why. Find a real expert to look at your work every two weeks.
+
+#### Problem 20: Tacit knowledge, the "feel" you can't seem to learn
+
+- **Root cause**: Some expert knowledge can't be put into words (Polanyi). It only comes from doing plus feedback.
+- **Fix**: Do lots of real tasks. Watch experts' **process**, not just their results (live streams, screen recordings, code reviews, a paper's revision history). Imitate, then compare: do it yourself first, then see how an expert does it, and write down the differences. Have AI or experts review your work and ask "how would an expert change this?" Keep a case library, one lesson per case.
+
+#### Problem 21: Reading papers, documentation and other hard material
+
+- **Fix**: Use the three-pass method (Keshav, *How to Read a Paper*): first pass, 5–10 minutes on the title, abstract, figures and conclusions; second pass, the main content; third pass, reproduce the derivations or logic. Ways AI can help:
+  - Before reading, have AI list "the background concepts needed to understand this" and quiz you on them;
+  - While reading, use P4 whenever you get stuck;
+  - Afterward, write a closed-book summary first, then compare it with the AI's summary; the differences are your learning points;
+  - Prefer source-grounded tools (ones that answer only from the documents you upload) to reduce hallucination;
+  - **Don't let an AI summary replace the reading itself.** That's the forklift.
+
+#### Problem 22: Anxiety, impostor syndrome, pressure to go faster
+
+- **Fix**: Set a realistic expectation for "learning fast" (see 2.6). Plateaus and temporary dips are part of learning. Track only your own curve. Sleep and exercise help both mood and learning. Keep a list of things you can do now that you couldn't do a month ago.
+
+---
+
+## 7. Daily habits: your brain is your learning hardware
+
+### 7.1 The physiological layer
+
+| Habit | Evidence | What to do |
 |---|---|---|
-| **睡眠** | 【强】一夜不睡会显著削弱海马体的编码活动，新记忆的保持也随之变差（Yoo et al., 2007；Walker 实验室在部分实验中报告的降幅高达约 40%） | 7–9 小时，作息固定。**绝不拿睡眠换学习时间**，当天学的内容要靠当晚的睡眠来巩固 |
-| **有氧运动** | 【中】坚持一年有氧运动，老年人的海马体体积增加约 2%（Erickson et al., 2011） | 每周 3–5 次，每次 30–45 分钟。带着一道思考题去散步或跑步 |
-| **安静休息** | 【中】学完后短暂地"什么都不做"（清醒休息），有助于长期保持（Dewar et al., 2012） | 学习块之间的休息**不刷手机**：散步、发呆、看窗外 |
-| **好奇心** | 【中】处于好奇状态时，记忆效果更好，连附带看到的信息也记得更牢（Gruber et al., 2014） | 每次学习都从一个"我真想知道答案"的问题开始，这正是"猜"这一步的作用 |
+| **Sleep** | [Strong] One night without sleep markedly weakens hippocampal encoding and worsens retention of new memories (Yoo et al., 2007; the Walker lab reports drops of up to ~40% in some experiments) | 7–9 hours on a regular schedule. **Never trade sleep for study time**: that night's sleep is what consolidates the day's learning |
+| **Aerobic exercise** | [Moderate] A year of aerobic exercise increased hippocampal volume by about 2% in older adults (Erickson et al., 2011) | 3–5 times a week, 30–45 minutes. Take a thinking question with you on walks or runs |
+| **Quiet rest** | [Moderate] Brief wakeful rest right after learning ("doing nothing") improves long-term retention (Dewar et al., 2012) | Breaks between blocks **without your phone**: walk, daydream, look out the window |
+| **Curiosity** | [Moderate] In a state of curiosity, memory improves, even for incidental information (Gruber et al., 2014) | Start every session with a question you genuinely want answered. That's what the Predict step is for |
 
-### 7.2 环境层
+### 7.2 The environment layer
 
-- 固定的学习位置，手机隔离，只开一个窗口。
-- 学习专用的 AI 项目（开学习模式或用 P0）。
-- **纸和笔**：预测、闭卷回忆都写在纸上。写在纸上的东西没法"顺手问 AI"。
+- A fixed place to study, your phone isolated, one window open.
+- A dedicated AI learning project (learning mode on, or P0).
+- **Pen and paper** for predictions and closed-book recall. You can't casually ask an AI about something written on paper.
 
-### 7.3 一天的模板
+### 7.3 A daily template
 
-**全力冲刺日（6–8 小时）**
+**Full sprint day (6–8 hours)**
 
-| 时段 | 内容 | 要点 |
+| Time | What | Notes |
 |---|---|---|
-| 起床后 15 分钟 | 闭卷回忆昨天的内容（口头或书面） | 不看笔记 |
-| 深度块 1（90 分钟） | 一个新概念的完整循环 | 无 AI，或只开学习项目 |
-| 休息 15 分钟 | 散步、发呆 | 不刷手机 |
-| 深度块 2（90 分钟） | 一个新概念的循环，或专项练习 | 混入旧题做交错 |
-| 午饭 + 20 分钟午睡 | | |
-| 项目块（2 小时） | 实战，遵守驾驶员规则 | AI 可以多用，但每一处都要能解释 |
-| 复习块（30 分钟） | Anki + 重做错题 | |
-| 运动（30–45 分钟） | 有氧 | 带一道思考题 |
-| 晚间（30 分钟） | 写学习日志，定好明天第一件事，用外行能懂的话写下"今天学会了什么" | |
-| 睡前 5 分钟 | 快速回忆今天最关键的 3 个点 | |
-| 睡眠 7–9 小时 | | 不熬夜 |
+| 15 min after waking | Closed-book recall of yesterday (out loud or on paper) | No notes |
+| Deep block 1 (90 min) | One full loop on a new concept | No AI, or only the learning project |
+| 15 min break | Walk, daydream | No phone |
+| Deep block 2 (90 min) | Another concept loop, or focused practice | Mix in older problems |
+| Lunch + 20 min nap | | |
+| Build block (2 h) | Project work under the driver rule | More AI allowed, but you must be able to explain every part |
+| Review block (30 min) | Anki + redo past mistakes | |
+| Exercise (30–45 min) | Aerobic | Take a thinking question |
+| Evening (30 min) | Learning log; set tomorrow's first task; write "what I learned today" for a layperson | |
+| 5 min before bed | Quickly recall today's 3 most important points | |
+| Sleep 7–9 h | | No late nights |
 
-**业余学习日（约 2 小时）**
+**Part-time day (about 2 hours)**
 
-| 时段 | 内容 |
+| Time | What |
 |---|---|
-| 通勤或碎片时间 | Anki 20 分钟，再带着一道思考题 |
-| 晚上 60 分钟 | 一个概念循环 |
-| 30 分钟 | 练习或项目 |
-| 10 分钟 | 写日志，睡前回忆 |
+| Commute or spare moments | 20 min of Anki, plus one thinking question |
+| 60 min in the evening | One concept loop |
+| 30 min | Practice or project |
+| 10 min | Log; recall before bed |
 
-### 7.4 一周的节奏
+### 7.4 The weekly rhythm
 
-- **周一到周五**：概念循环 + 项目
-- **周六**：推进大项目，写一篇综合性的博客
-- **周日**：拔插头测试，周复盘（P11），重写一页纸概论，**然后休息**
+- **Monday–Friday**: concept loops + project
+- **Saturday**: push the bigger project forward; write one synthesis blog post
+- **Sunday**: unplug test, weekly review (P11), rewrite the one-page overview, **then rest**
 
-### 7.5 学习日志模板
+### 7.5 Learning log template
 
 ```
-日期：
-今天的唯一目标：
-新学的概念（闭卷写出，每个一句话）：
-独立解决的问题数 / 用了提示的问题数（最高用到第几级）：
-今天最有价值的一个错误：
-今天抓到的 AI 错误（如果有）：
-还没懂的地方（明天的预测试题）：
-明天第一件事：
+Date:
+Today's single goal:
+New concepts (written closed-book, one sentence each):
+Problems solved alone / problems that needed hints (highest hint level used):
+Most valuable mistake today:
+AI mistakes I caught today (if any):
+What I still don't get (tomorrow's pretest questions):
+First task tomorrow:
 ```
 
 ---
 
-## 8. 30 天冲刺：模板与示例
+## 8. A 30-day sprint: template and example
 
-### 8.1 通用模板
+### 8.1 The general template
 
-| 阶段 | 天数 | 目标 | 产出 |
+| Phase | Days | Goal | Output |
 |---|---|---|---|
-| 定靶 + 测绘 | 第 1–2 天 | 画地图、做诊断、选主线资源 | 能力清单、毕业考题目、一页纸地图 v1 |
-| 骨架 | 第 3–6 天 | 掌握 5–9 个大概念 | 一页纸概论 v1，第一个小项目 |
-| 深化循环 I | 第 7–13 天 | 逐个循环核心概念 | 第二个小项目，第一次周测 |
-| 深化循环 II | 第 14–20 天 | 剩余核心概念 + 交错练习 | 中型项目，第一篇博客，第二次周测 |
-| 整合实战 | 第 21–27 天 | 真实项目，补短板 | 真实项目，第二篇博客，第三次周测 |
-| 毕业 | 第 28–30 天 | 毕业考（无 AI），复盘 | 毕业考成绩、一页纸概论 v4、下一阶段计划 |
+| Target + Map | 1–2 | Map, diagnostic, choose the spine resource | Ability checklist, final exam spec, one-page map v1 |
+| Skeleton | 3–6 | Master 5–9 big ideas | One-page overview v1, first small project |
+| Deep loops I | 7–13 | Loop through core concepts one by one | Second small project, weekly test #1 |
+| Deep loops II | 14–20 | Remaining core concepts + interleaved practice | Medium project, blog post #1, weekly test #2 |
+| Integrate & build | 21–27 | A real project; shore up weak spots | Real project, blog post #2, weekly test #3 |
+| Graduate | 28–30 | Final exam (no AI), review | Exam result, one-page overview v4, plan for the next phase |
 
-### 8.2 示例：30 天从零理解"大模型推理及其硬件瓶颈"
+### 8.2 Example: 30 days from zero to understanding LLM inference and its hardware bottlenecks
 
-> 假设的起点：会写 Python，学过线性代数，不懂机器学习；有一些数字电路或 FPGA 背景（正好可以当挂钩）。
+> Assumed starting point: you can write Python and have taken linear algebra, but you don't know machine learning. You have some digital-design or FPGA background, which makes a perfect set of hooks.
 
-**能力清单**
+**Ability checklist**
 
-1. 用 NumPy 从零实现单层 Transformer 的前向推理（注意力、MLP、LayerNorm），并能说清每一步的张量形状。
-2. 给定模型参数量、数值精度、上下文长度和批大小，能估算显存占用（权重 + KV cache），以及每个 token 的理论延迟下限。
-3. 能用 Roofline 模型判断 prefill 和 decode 两个阶段各自是计算受限还是带宽受限，并解释为什么小批量下的 decode 通常是带宽受限。
-4. 能读懂量化、FlashAttention、投机解码等优化方法的论文摘要，并说出它们各自在缓解哪一个瓶颈。
+1. Implement a single-layer Transformer forward pass from scratch in NumPy (attention, MLP, LayerNorm), and explain the tensor shape at every step.
+2. Given a model's parameter count, numeric precision, context length and batch size, estimate memory use (weights + KV cache) and the theoretical lower bound on per-token latency.
+3. Use the roofline model to tell whether prefill and decode are compute-bound or bandwidth-bound, and explain why decode at small batch sizes is usually bandwidth-bound.
+4. Read the abstracts of optimization papers on quantization, FlashAttention and speculative decoding, and say which bottleneck each one relieves.
 
-**毕业考**（不用 AI，3 小时）：给定一个 7B 模型的配置和一块硬件的规格，(a) 估算显存需求和 decode 吞吐量的上限；(b) 指出主要瓶颈，提出两种优化方案并说明各自的代价；(c) 手写注意力前向计算的伪代码。
+**Final exam** (no AI, 3 hours): given a 7B model's configuration and a piece of hardware's specs, (a) estimate memory requirements and the upper bound on decode throughput; (b) identify the main bottleneck and propose two optimizations with their costs; (c) write pseudocode for the attention forward pass by hand.
 
-**骨架（大概念）**：token 与嵌入 → 注意力 → Transformer block → 自回归生成 → KV cache → 算术强度与 Roofline → 量化 → 批处理与并行
+**Skeleton (big ideas)**: tokens and embeddings → attention → the Transformer block → autoregressive generation → KV cache → arithmetic intensity and the roofline → quantization → batching and parallelism
 
-| 周 | 重点 | 项目或产出 |
+| Week | Focus | Project or output |
 |---|---|---|
-| 第 1 周 | 骨架 + 注意力 | 手算 3 个 token 的注意力；用 NumPy 实现 attention |
-| 第 2 周 | Transformer block、生成过程、KV cache | 实现完整的前向推理；写一篇博客《KV cache 为什么这么吃显存》 |
-| 第 3 周 | 算术强度、内存带宽和算力、Roofline | 用 Python 写一个推理性能估算器 |
-| 第 4 周 | 量化、FlashAttention、投机解码 | 精读 3 篇论文的摘要和核心图表；参加毕业考 |
+| Week 1 | Skeleton + attention | Compute attention over 3 tokens by hand; implement attention in NumPy |
+| Week 2 | The Transformer block, generation, KV cache | Implement the full forward pass; blog post: "Why the KV cache eats so much memory" |
+| Week 3 | Arithmetic intensity, memory bandwidth vs compute, the roofline | Write an inference performance estimator in Python |
+| Week 4 | Quantization, FlashAttention, speculative decoding | Read the abstracts and key figures of 3 papers; take the final exam |
 
-**利用已有的知识当挂钩**：存储器带宽、片上缓存、乘加单元这些硬件概念，可以直接当作理解 Roofline 和 FlashAttention 的锚点，这正是 1.2 节说的"压缩率"在起作用。
+**Use what you already know as hooks**: hardware concepts like memory bandwidth, on-chip buffers and multiply-accumulate units are ready-made anchors for understanding the roofline model and FlashAttention. That's the "compression ratio" from Section 1.2 at work.
 
-### 8.3 合理预期
+### 8.3 Realistic expectations
 
-按每天 3–4 小时算，30 天大约是 100 小时。坚持执行这套方法，可以合理期待达到"胜任的新手"水平：能读懂领域内的主流讨论，能完成入门级的真实任务，能判断 AI 的回答靠不靠谱，也知道下一步该学什么。它**不能**让你在 30 天内成为专家，但能让你少走大约一半的弯路【推演】。
+At 3–4 hours a day, 30 days is roughly 100 hours. If you stick to the method, you can reasonably expect to reach "competent beginner": you can follow mainstream discussion in the field, complete entry-level real tasks, tell whether an AI's answers hold up, and know what to learn next. It **won't** make you an expert in 30 days, but it can cut roughly half of the wasted detours [Inference].
 
 ---
 
-## 9. 度量：怎么知道带宽真的拉满了
+## 9. Metrics: how do you know you've maxed out your bandwidth?
 
-| 指标 | 目标区间 | 说明 |
+| Metric | Target range | Notes |
 |---|---|---|
-| 输出时间占比 | ≥ 60% | 提取、讲解、练习、项目的时间占比 |
-| "先想后问"比例 | ≥ 90% | 只统计目标领域内的提问 |
-| 练习正确率 | 70%–85% | 高于 90% 就加难度，低于 60% 就降难度。"85% 规则"（Wilson et al., 2019）来自计算模型，可作为参考 |
-| Anki 保留率 | 85%–90% | |
-| 平均提示等级 | 逐周下降 | 你越来越不需要帮助 |
-| 拔插头测试成绩 | 逐周上升 | **最重要的指标** |
-| 高信心错误数 | 逐周下降 | 校准能力在提高 |
-| 能讲清楚的概念数 | 地图点亮率 | |
-| 每周公开产出 | ≥ 1 篇 | |
+| Share of time on output | ≥ 60% | Retrieval, explaining, practice, projects |
+| Think-before-you-ask rate | ≥ 90% | Counting only questions in your target field |
+| Practice accuracy | 70–85% | Above 90%, make it harder; below 60%, make it easier. The "85% rule" (Wilson et al., 2019) comes from computational models; treat it as a guide |
+| Anki retention | 85–90% | |
+| Average hint level | Falling week by week | You need less help over time |
+| Unplug test score | Rising week by week | **The most important metric** |
+| High-confidence errors | Falling week by week | Your calibration is improving |
+| Concepts you can explain clearly | Share of the map lit up | |
+| Public output per week | ≥ 1 piece | |
 
 ---
 
-## 10. 局限与开放问题
+## 10. Limitations and open questions
 
-- 许多学习科学的结论来自实验室研究（单词表、短文本），放到真实课堂里效应通常会变小。
-- AI 学习研究大多是短期、小样本的，不少还是工作论文，结果甚至互相矛盾（比如哈佛和马里兰），说明设计和情境的影响非常大。
-- 个体差异很大，没有放之四海而皆准的方法。
-- 本文的"有效学习带宽"公式是一个启发式框架，不是测量出来的科学量。
-- 长期问题没人知道答案：几年的 AI 辅助学习之后，人的能力结构会变成什么样？
+- Much of learning science comes from lab studies (word lists, short texts); effects usually shrink in real classrooms.
+- Most AI learning studies are short and small, many are still working papers, and some contradict each other (Harvard vs Maryland), which shows how much design and context matter.
+- Individual differences are large. No method fits everyone.
+- The "effective learning bandwidth" formula in this post is a heuristic framework, not a measured scientific quantity.
+- Nobody knows the long-term answer: after years of AI-assisted learning, what will people's abilities look like?
 
-**建议**：把这套方法当作一组**假设**，用第 9 节的指标在自己身上做实验。这本身就是一次 build in public。
+**My suggestion**: treat this method as a set of **hypotheses**, and run the experiment on yourself using the metrics in Section 9. That in itself is building in public.
 
 ---
 
-## 参考文献
+## References
 
-**AI 与学习**
+**AI and learning**
 
-- Bastani, H. et al. (2025). Generative AI without guardrails can harm learning: Evidence from high school mathematics. *PNAS*, 122(26). [SSRN](https://papers.ssrn.com/abstract=4895486) · [Wharton 解读](https://knowledge.wharton.upenn.edu/article/without-guardrails-generative-ai-can-harm-education)
+- Bastani, H. et al. (2025). Generative AI without guardrails can harm learning: Evidence from high school mathematics. *PNAS*, 122(26). [SSRN](https://papers.ssrn.com/abstract=4895486) · [Wharton summary](https://knowledge.wharton.upenn.edu/article/without-guardrails-generative-ai-can-harm-education)
 - Kestin, G., Miller, K. et al. (2025). AI tutoring outperforms in-class active learning. *Scientific Reports*, 15, 17458. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC12179260/)
 - World Bank (2025). From chalkboards to chatbots: Evaluating the impact of generative AI on learning outcomes in Nigeria. [World Bank Blog](https://blogs.worldbank.org/en/education/From-chalkboards-to-chatbots-Transforming-learning-in-Nigeria)
 - Shen, J. H. & Tamkin, A. (2026). How AI assistance impacts the formation of coding skills. [Anthropic](https://www.anthropic.com/research/AI-assistance-coding-skills) · [arXiv:2601.20245](https://arxiv.org/abs/2601.20245)
@@ -757,12 +768,12 @@ Bloom（1984）发现，一对一辅导的学生成绩比普通课堂高出约 2
 - Liu, J., Sweet, T. et al. (2026). The effects of course-integrated AI tutoring on student performance and engagement: A randomized university trial. *EdWorkingPaper* 26-1598. [UMD](https://edsi.umd.edu/publications/effects-course-integrated-ai-tutoring-student-performance-and-engagement-randomized)
 - Anthropic (2025). Anthropic Education Report: How university students use Claude. [Anthropic](https://www.anthropic.com/news/anthropic-education-report-how-university-students-use-claude)
 
-**认知与学习科学**
+**Cognitive and learning science**
 
 - Zheng, J. & Meister, M. (2025). The unbearable slowness of being: Why do we live at 10 bits/s? *Neuron*. [arXiv:2408.10234](https://arxiv.org/abs/2408.10234)
 - Cowan, N. (2001). The magical number 4 in short-term memory. *Behavioral and Brain Sciences*, 24(1).
 - Chase, W. G. & Simon, H. A. (1973). Perception in chess. *Cognitive Psychology*, 4(1).
-- Dunlosky, J. et al. (2013). Improving students' learning with effective learning techniques. *Psychological Science in the Public Interest*, 14(1). [APS 新闻稿](https://www.psychologicalscience.org/news/releases/which-study-strategies-make-the-grade.html)
+- Dunlosky, J. et al. (2013). Improving students' learning with effective learning techniques. *Psychological Science in the Public Interest*, 14(1). [APS press release](https://www.psychologicalscience.org/news/releases/which-study-strategies-make-the-grade.html)
 - Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning. *Psychological Science*, 17(3).
 - Cepeda, N. J. et al. (2008). Spacing effects in learning: A temporal ridgeline of optimal retention. *Psychological Science*, 19(11). [PubMed](https://pubmed.ncbi.nlm.nih.gov/19076480/)
 - Rohrer, D. et al. (2020). A randomized controlled trial of interleaved mathematics practice. *Journal of Educational Psychology*, 112(1).
@@ -784,7 +795,7 @@ Bloom（1984）发现，一对一辅导的学生成绩比普通课堂高出约 2
 - Rayner, K. et al. (2016). So much to read, so little time. *PSPI*, 17(1).
 - Simons, D. J. et al. (2016). Do "brain-training" programs work? *PSPI*, 17(3).
 
-**生理与习惯**
+**Physiology and habits**
 
 - Yoo, S.-S. et al. (2007). A deficit in the ability to form new human memories without sleep. *Nature Neuroscience*, 10(3). [PubMed](https://pubmed.ncbi.nlm.nih.gov/17293859/)
 - Erickson, K. I. et al. (2011). Exercise training increases size of hippocampus and improves memory. *PNAS*, 108(7).
@@ -793,13 +804,13 @@ Bloom（1984）发现，一对一辅导的学生成绩比普通课堂高出约 2
 - Leroy, S. (2009). Why is it so hard to do my work? The challenge of attention residue. *Organizational Behavior and Human Decision Processes*, 109(2).
 - Gollwitzer, P. M. (1999). Implementation intentions. *American Psychologist*, 54(7).
 
-**书与思想**
+**Books and ideas**
 
-- 柏拉图，《斐德若篇》274c–275b
+- Plato, *Phaedrus* 274c–275b (trans. Benjamin Jowett)
 - Simon, H. A. (1971). Designing organizations for an information-rich world.
 - Willingham, D. T. (2009). *Why Don't Students Like School?*
 - Polanyi, M. (1966). *The Tacit Dimension*.
 - Young, S. H. (2019). *Ultralearning*.
-- Pólya, G. (1945). *How to Solve It*（《怎样解题》）
+- Pólya, G. (1945). *How to Solve It*.
 - Keshav, S. (2007). How to read a paper. *ACM SIGCOMM CCR*, 37(3).
-- Anki 关于 FSRS 的说明：[Anki FAQ](https://docs.ankiweb.net/faqs/what-spaced-repetition-algorithm)
+- Anki's notes on FSRS: [Anki FAQ](https://docs.ankiweb.net/faqs/what-spaced-repetition-algorithm)
